@@ -4,3 +4,6 @@ pool.qmd
 /~$timetable.xlsx
 /.DS_Store
 /internal/
+*.aux
+/*.log
+/opensciws.pdf

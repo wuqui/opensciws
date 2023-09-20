@@ -28,18 +28,6 @@ format:
 
 ---
 
-## Workshop materials
-
-GitHub repository
-: https://github.com/wuqui/opensciws
-
-slides
-: https://wuqui.github.io/opensciws/opensciws_slides.html
-
-website version
-: https://wuqui.github.io/opensciws/opensciws_website.html
-
----
 
 ## > `whoami`
 
@@ -78,17 +66,27 @@ LMU Munich
 
 ---
 
-## Topics
+## Workshop materials
 
-::: {.smallest}
-- **Open Science**: What is it and why does it make sense?
-- **Project setup**: Learn to efficiently organize your project's files and folders.
-- **Data, code, and document management**: Understand how to effectively manage and maintain your data, code, and documents.
-- **Utilizing different data types**: Discover how to work with various data types, such as interviews, web, and social media data.
-- **Publication process**: Learn about options for publishing your data, code, and documents.
-:::
+GitHub repository
+: <https://github.com/wuqui/opensciws>
+
+slides
+: <https://wuqui.github.io/opensciws/opensciws_slides.html>
+
+website version
+: <https://wuqui.github.io/opensciws/opensciws_website.html>
 
 ---
+
+## **Open** Open Science workshop
+
+Focus on …
+
+- ask questions
+- discuss
+- apply and practice
+- collaborate
 
 ## Time table
 
@@ -120,31 +118,31 @@ LMU Munich
 
 CAIS: Forschung zu Digitalisierung und Digitale Gesellschaft
 
-:::: {.columns}
-::: {.column width="50%" .r-fit-text}
-Fachrichtungen 
+:::: {.columns .smallest}
+::: {.column width="50%"}
+**research fiels**
 
-- Politikwissenschaft
-- Erziehungswissenschaft
-- Kommunikationswissenschaft
-- Soziologie
+- education and pedagogy
+- political science
+- sociology
+- communications studies
 - …
 :::
-::: {.column width="50%" .r-fit-text}
-Daten und Methoden
+::: {.column width="50%"}
+**data and methods**
 
-- qualitativen Interviews
-- Textanalysen
-- quantitativen Befragungen
-- experimentellen Designs
-- Online-Plattformen/Social Media
+- qualitative interviews
+- text analysis 
+- quantitative surveys
+- experimental designs
+- social media studies
 - …
 :::
 ::::
 
 ---
 
-### Main interests
+### Survey: main interests
 
 ::: {.smallest}
 - reproducible workflows
@@ -156,13 +154,15 @@ Daten und Methoden
     - text analysis
     - questionnaires
 - publishing
-    - papers
-    - code and data
+    - authoring papers
+    - sharing data and code
 :::
 
 ---
 
 ### Who are you?
+
+Please briefly introduce yourself …
 
 ::::: {.smaller}
 :::: {.columns}
@@ -183,7 +183,7 @@ Daten und Methoden
 
 ---
 
-## What is Open Science
+## What is Open Science?
 
 ![](att/what-is-open-science.png)
 
@@ -191,7 +191,16 @@ Daten und Methoden
 
 ## Why should we do Open Science?
 
-![](att/most-science-is-wrong.png)
+![[source](https://docs.google.com/presentation/d/1Ae85nKcTAkr-omlTZopN04yV-lPBZJjX9kPMVUlBRVo/edit#slide=id.gfe5b481e28_0_8)](att/most-science-is-wrong.png)
+
+::: {.notes}
+- dataset/sample size
+- effect sizes
+- selection/number of relationships
+- flexibility in design
+- financial interests
+- hype around topic/field
+:::
 
 ---
 
@@ -199,7 +208,7 @@ Daten und Methoden
 
 ---
 
-![[source](https://projects.fivethirtyeight.com/p-hacking/)](att/p-hacking.png)
+What are the reasons why science can go wrong?
 
 ---
 
@@ -207,14 +216,13 @@ Daten und Methoden
 
 ---
 
-![[source](https://www.theverge.com/2020/8/6/21355674/human-genes-rename-microsoft-excel-misreading-dates)](att/excel-renaming.png)
+![[source](https://projects.fivethirtyeight.com/p-hacking/)](att/p-hacking.png)
 
 ---
 
 ![[source](https://www.youtube.com/watch?v=zwRdO9_GGhY)](att/skills-to-pay-the-bills.png)
 
 ---
-
 
 ## Principles of Open Science
 
@@ -288,15 +296,6 @@ What do you find interesting, important, or attractive about Open Science?
 ---
 
 
-# Taking notes
-
-Networked notes
-
-- logseq
-- Obsidian
-
----
-
 # Version control
 
 ---
@@ -318,6 +317,14 @@ Networked notes
 
 ---
 
+![[source](https://technicalwriterhq.com/documentation/document-control/document-version-control/)](att/version-control-multiple-users.png)
+
+---
+
+![[source](https://technicalwriterhq.com/documentation/document-control/document-version-control/)](att/version-control-benefits.png)
+
+---
+
 ## git and GitHub/GitLab
 
 :::: {.columns .r-fit-text}
@@ -328,7 +335,7 @@ git
 ![](att/logo-git.png){height=250}
 
 ```sh
-git add scr/tests.py
+git add src/tests.py
 git commit -m 'add tests'
 git push
 ```
@@ -352,15 +359,15 @@ GitHub and GitLab
 
 ---
 
-## git commands
-
-![[(source)](https://docs.google.com/presentation/d/1Ae85nKcTAkr-omlTZopN04yV-lPBZJjX9kPMVUlBRVo/edit#slide=id.g23ae9873052_7_266)](att/git-commands.png)
-
----
-
 ## Collaborating using GitHub
 
 ![[(source)](https://cdn.duzun.me/images/tips/git_remotes.png)](att/github-collaboration.png)
+
+---
+
+## git commands
+
+![[(source)](https://docs.google.com/presentation/d/1Ae85nKcTAkr-omlTZopN04yV-lPBZJjX9kPMVUlBRVo/edit#slide=id.g23ae9873052_7_266)](att/git-commands.png)
 
 ---
 
@@ -371,7 +378,41 @@ GitHub and GitLab
 
 ---
 
+### Example
+
+![[source](https://github.com/alan-turing-institute/the-turing-way/commit/72039372a2803a4ec15764b2c01017039320f096 )](att/github-example-commit.png)
+
+---
+
 ## How to set up a GitHub repository
+
+---
+
+### set up `git`
+
+::: {.smallest}
+**Installing** `git`: see [tutorial](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
+
+**Using** `git`:
+
+- from the command line
+- using a standalone GUI^[Graphical User Interface] tool; e.g.: 
+    - [GitKraken](https://www.gitkraken.com/)
+    - [GitHub Desktop](https://desktop.github.com/)
+- from within your editor/IDE^[Integrated Development Environment]; e.g.:
+    - [RStudio](https://posit.co/download/rstudio-desktop/)
+    - [VSCode](https://code.visualstudio.com/)
+:::
+
+---
+
+### set up `GitHub`
+
+[tutorial](https://docs.github.com/en/get-started/quickstart/set-up-git)
+
+- setting up git user information (name, passwort)
+- setting up GitHub authentication
+- setting and storing authentication (‘token’)
 
 ---
 
@@ -395,7 +436,7 @@ GitHub and GitLab
 
 ---
 
-### `clone` the repository
+### `clone` repositories
 
 go to the folder where you want your project to live
 
@@ -407,19 +448,21 @@ git clone https://github.com/wuqui/opensciws.git
 
 ---
 
-### `add` changes
+### `add`ing, `commit`ing, and `push`ing changes
 
----
+![[(source)](https://docs.google.com/presentation/d/1Ae85nKcTAkr-omlTZopN04yV-lPBZJjX9kPMVUlBRVo/edit#slide=id.g23ae9873052_7_266)](att/git-commands.png)
 
-### `commit` changes
-
----
-
-### `push` changes
+```sh
+git add src/tests.py
+git commit -m 'add tests'
+git push
+```
 
 ---
 
 # Project structure
+
+---
 
 :::: {.columns}
 ::: {.column width="50%"}
@@ -442,10 +485,10 @@ Let’s not pretend we’re all geniuses …
 ::: {.smallest}
 File names should be:
 
-- Machine readable
-- Human readable
-- Optional: Consistent
-- Optional: Play well with default ordering
+- machine-readable
+- human-readable
+- consistent
+- optional: play well with default ordering (e.g. include timestamps)
 :::
 
 ---
@@ -472,35 +515,16 @@ File names should be:
 
 ```
 
- 
-
-```sh
-tree DIR
-```
-cookie cutters
-
 ---
 
-## Practice: managing files and folders
+## Practice: project management
 
----
+You have until 11:50 h to work on either …
 
-# Data
+1. developing a project structure for your needs from scratch
+1. refactoring/cleaning an existing project^[make a backup first]
 
----
-
-## FAIR data
-
-![[source](https://libereurope.eu/article/fairdataconsultation/)](att/fair-data.png)
-
----
-
-## Types of data
-
-- interviews
-- questionnaires
-- web
-- social media
+Optionally: set up version control via git/GitHub for this project.
 
 ---
 
@@ -519,6 +543,12 @@ cookie cutters
 ---
 
 ![[source](https://www.youtube.com/watch?v=zwRdO9_GGhY)](att/reproducibility-numbers.png)
+
+---
+
+## The quality of tools
+
+![[source](https://www.theverge.com/2020/8/6/21355674/human-genes-rename-microsoft-excel-misreading-dates)](att/excel-renaming.png)
 
 ---
 
@@ -547,6 +577,25 @@ Other materials
 
 :::
 ::::
+
+---
+
+# Data and methods
+
+---
+
+## FAIR data
+
+![[source](https://libereurope.eu/article/fairdataconsultation/)](att/fair-data.png)
+
+---
+
+## Types of data
+
+- interviews
+- questionnaires
+- web
+- social media
 
 ---
 
