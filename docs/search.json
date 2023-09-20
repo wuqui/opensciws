@@ -161,32 +161,46 @@
     "text": "Practice: project management\nYou have until 11:50 h to work on either …\n\ndeveloping a project structure for your needs from scratch\nrefactoring/cleaning an existing project5\n\nOptionally: set up version control via git/GitHub for this project."
   },
   {
-    "objectID": "opensciws_website.html#reproducibility-et-al.",
-    "href": "opensciws_website.html#reproducibility-et-al.",
+    "objectID": "opensciws_website.html#reproducibility",
+    "href": "opensciws_website.html#reproducibility",
     "title": "Open Science and\nResearch Software Engineering",
-    "section": "Reproducibility et al.",
-    "text": "Reproducibility et al.\n\n\n\nThe Turing Way\n\n\n\n\n\n\n\n\nsource"
+    "section": "Reproducibility",
+    "text": "Reproducibility\n\n\nReproducibility (crisis)\n\n\n\nsource\n\n\n\n\n\nReproducibility et al.\n\n\n\nThe Turing Way\n\n\n\n\n\n\nThe quality of tools\n\n\n\nsource"
   },
   {
-    "objectID": "opensciws_website.html#the-quality-of-tools",
-    "href": "opensciws_website.html#the-quality-of-tools",
+    "objectID": "opensciws_website.html#testing-code",
+    "href": "opensciws_website.html#testing-code",
     "title": "Open Science and\nResearch Software Engineering",
-    "section": "The quality of tools",
-    "text": "The quality of tools\n\n\n\nsource"
+    "section": "Testing code",
+    "text": "Testing code\n\nWhy we should test code\n\n\n\nsource\n\n\n\n\n\nProfessional testing\n\n\n\nsource\n\n\n\n\n\nTypes of tests\n\n\n\n\n\n\nsource\n\n\nTesting frameworks\n\nPython: pytest\nR: testthat\n\n\nAnalogy\n\nduring the process of manufacturing a ballpoint pen, the cap, the body, the tail, the ink cartridge and the ballpoint are produced separately and unit tested separately.\nWhen two or more units are ready, they are assembled and integration testing is performed, for example a test to check the cap fits on the body.\nWhen the complete pen is integrated, system testing is performed to check it can be used to write like any pen should.\nAcceptance testing could be a check to ensure the pen is the colour the customer ordered.\n\nsource\n\n\n\n\n\n\nTesting example\nusing pytest for Python"
   },
   {
-    "objectID": "opensciws_website.html#notebooks-and-literate-programming",
-    "href": "opensciws_website.html#notebooks-and-literate-programming",
+    "objectID": "opensciws_website.html#documenting-code",
+    "href": "opensciws_website.html#documenting-code",
     "title": "Open Science and\nResearch Software Engineering",
-    "section": "notebooks and literate programming",
-    "text": "notebooks and literate programming\n\nKnuth\n\napplication\n\nR\nPython: nbdev"
+    "section": "Documenting code",
+    "text": "Documenting code\n\nLiterate programming\n\n\n\n\n’Literate programming is a methodology that combines a programming language with a documentation language,\nthereby making programs more robust, more portable, more easily maintained,\nand arguably more fun to write than programs that are written only in a high-level language.\nThe main idea is to treat a program as a piece of literature, addressed to human beings rather than to a computer.\nThe program is also viewed as a hypertext document, rather like the World Wide Web. (Indeed, I used the word WEB for this purpose long before CERN grabbed it!)’\n\nDonald Knuth\n\n\n\n\nsource\n\n\n\n\n\n\n\n\nNotebooks\n\n\n\nPython\n\n\n\nsource\n\n\n\nR\n\n\n\nsource\n\n\n\n\n→ both work with Quarto\n\n\n\n\nExample using nbdev for Python\n\nProgramming a deck of cards: https://github.com/fastai/nbdev_cards/\n\n\n\n\n\nLiterate testing with nbdev\n\n\n\n\nAdditional benefits of nbdev\n\npublishing documentation via Quarto\nsimple, integrated testing\ncontinuous integration\ndependency management\npublishing code for PyPI and conda\n\n\n\n\nR: Quarto and RMarkdown"
   },
   {
     "objectID": "opensciws_website.html#licensing",
     "href": "opensciws_website.html#licensing",
     "title": "Open Science and\nResearch Software Engineering",
     "section": "Licensing",
-    "text": "Licensing\n\n\nCode\n\n\n\nhttps://choosealicense.com\n\n\n\nOther materials\n\n\n\nhttps://creativecommons.org/choose/"
+    "text": "Licensing\n\n\n\nCode\n\n\n\nhttps://choosealicense.com\n\n\noften appropriate: MIT license\n\nOther materials\n\n\n\nhttps://creativecommons.org/choose/"
+  },
+  {
+    "objectID": "opensciws_website.html#diversity-in-data-and-methods",
+    "href": "opensciws_website.html#diversity-in-data-and-methods",
+    "title": "Open Science and\nResearch Software Engineering",
+    "section": "Diversity in data and methods",
+    "text": "Diversity in data and methods\nCAIS: Forschung zu Digitalisierung und Digitale Gesellschaft\n\n\nresearch fiels\n\neducation and pedagogy\npolitical science\nsociology\ncommunications studies\n…\n\n\ndata and methods\n\nqualitative interviews\ntext analysis\nquantitative surveys\nexperimental designs\nsocial media studies\n…\n\n\n\n\n\n\n\nsource"
+  },
+  {
+    "objectID": "opensciws_website.html#reasons-to-share-your-data",
+    "href": "opensciws_website.html#reasons-to-share-your-data",
+    "title": "Open Science and\nResearch Software Engineering",
+    "section": "Reasons to share your data",
+    "text": "Reasons to share your data\n\n\n\n\n\n\nsource\n\n\n\n\nTo allow the possibility to fully reproduce a scientific study.\nTo prevent duplicate efforts and speed up scientific progress. Large amounts of research funds and careers of researchers can be wasted by only sharing a small part of research in the form of publications.\nTo facilitate collaboration and increase the impact and quality of scientific research.\nTo make results of research openly available as a public good, since research is often publicly funded."
   },
   {
     "objectID": "opensciws_website.html#fair-data",
@@ -196,25 +210,32 @@
     "text": "FAIR data\n\n\n\nsource"
   },
   {
-    "objectID": "opensciws_website.html#types-of-data",
-    "href": "opensciws_website.html#types-of-data",
+    "objectID": "opensciws_website.html#how-to-share-your-data",
+    "href": "opensciws_website.html#how-to-share-your-data",
     "title": "Open Science and\nResearch Software Engineering",
-    "section": "Types of data",
-    "text": "Types of data\n\ninterviews\nquestionnaires\nweb\nsocial media"
+    "section": "How to share your data",
+    "text": "How to share your data\n\nTuring Way tutorial\n\nStep 1: Select what data you want to share; eg.:\n\nethical concerns\ncommercial concerns\n\nStep 2: Choose a data repository or other sharing platform\n\noverview: re3data, NIH, FAIRsharing\nexamples: Zenodo, Dryad\n\nStep 3: Choose a licence and link to your paper and code; e.g.:\n\nCreative Commons\nOpen Data Commons\n\nStep 4: Upload your data and documentation\n\ngood file organisation\nappropriate file formats (e.g. csv &gt; xlsx)"
   },
   {
-    "objectID": "opensciws_website.html#plain-text",
-    "href": "opensciws_website.html#plain-text",
+    "objectID": "opensciws_website.html#sharing-social-media-data",
+    "href": "opensciws_website.html#sharing-social-media-data",
     "title": "Open Science and\nResearch Software Engineering",
-    "section": "Plain text",
-    "text": "Plain text"
+    "section": "Sharing social media data",
+    "text": "Sharing social media data\n\n\n\nsource\n\n\n\nObstacles to data-sharing\n\n\nReason 1: Preparing data for sharing is resource-intensive\nReason 2: Not enough credit for data sharing\nReason 3: Lack of confidence and knowledge\nReason 4: Data protection laws\nReason 5: Platform terms of service\nReason 6: Copyright\nReason 7: Informed consent\nReason 8: Ethical challenges\nReason 9: Lack of common standards\n\nsource\n\n\npaper on incest"
   },
   {
-    "objectID": "opensciws_website.html#quarto",
-    "href": "opensciws_website.html#quarto",
+    "objectID": "opensciws_website.html#the-case-of-twitter",
+    "href": "opensciws_website.html#the-case-of-twitter",
     "title": "Open Science and\nResearch Software Engineering",
-    "section": "Quarto",
-    "text": "Quarto\n\nsingle source → multiple output formats\n\nPDF for publication outlets\nblog\nwebsite"
+    "section": "The case of Twitter",
+    "text": "The case of Twitter\n\n\nstage 1: access costly & legal grey area for scraping\nstage 2: Research API 🎉\nstage 3: Elon Musik → X → …\n\n\n\n\n\n\nsource"
+  },
+  {
+    "objectID": "opensciws_website.html#data-and-methods-1",
+    "href": "opensciws_website.html#data-and-methods-1",
+    "title": "Open Science and\nResearch Software Engineering",
+    "section": "Data and methods",
+    "text": "Data and methods\nIn groups of shared interests and expertise, make a digital poster about challenges and possibilities of working with data in your field of study.\nFor example, this could tackle issues like collecting, publishing, and sharing data.\nTry to make it as concrete and constructive as possible.\nYou have until 14:20 h to make the poster.\nAfter that, each group will briefly present their poster."
   },
   {
     "objectID": "opensciws_website.html#pre-registration",
@@ -229,6 +250,20 @@
     "title": "Open Science and\nResearch Software Engineering",
     "section": "Outlets",
     "text": "Outlets\n\n\nArXiV\n\npreprints\n\nZenodo\n\nall kinds including data, code, preprints, etc.\n\nGitHub and GitLab\n\ncode, software\n\nOpen Science Framework\n\nall kinds including data, code, preprints, preregistration, etc.\n\nSoftware Heritage\n\narchival of code (long-term)\n\nPapers with Code\n\ncode and data for and with papers, mostly Machine Learning\n\n…"
+  },
+  {
+    "objectID": "opensciws_website.html#plain-text",
+    "href": "opensciws_website.html#plain-text",
+    "title": "Open Science and\nResearch Software Engineering",
+    "section": "Plain text",
+    "text": "Plain text"
+  },
+  {
+    "objectID": "opensciws_website.html#quarto",
+    "href": "opensciws_website.html#quarto",
+    "title": "Open Science and\nResearch Software Engineering",
+    "section": "Quarto",
+    "text": "Quarto\n\nsingle source → multiple output formats\n\nPDF for publication outlets\nblog\nwebsite"
   },
   {
     "objectID": "opensciws_website.html#footnotes",

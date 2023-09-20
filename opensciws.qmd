@@ -532,55 +532,231 @@ Optionally: set up version control via git/GitHub for this project.
 
 ---
 
-## Reproducibility et al.
-
-![[The Turing Way](https://the-turing-way.netlify.app/reproducible-research/overview/overview-definitions.html)](att/reproducibility-matrix.png)
+## Reproducibility
 
 ---
 
-![](att/reproducibility-ruler.png)
-
----
+### Reproducibility (crisis)
 
 ![[source](https://www.youtube.com/watch?v=zwRdO9_GGhY)](att/reproducibility-numbers.png)
 
 ---
 
-## The quality of tools
+### Reproducibility et al.
+
+![[The Turing Way](https://the-turing-way.netlify.app/reproducible-research/overview/overview-definitions.html)](att/reproducibility-matrix.png)
+
+![](att/reproducibility-ruler.png)
+
+---
+
+### The quality of tools
 
 ![[source](https://www.theverge.com/2020/8/6/21355674/human-genes-rename-microsoft-excel-misreading-dates)](att/excel-renaming.png)
 
 ---
 
-## notebooks and literate programming
 
-- Knuth
-    - application
-        - R
-        - Python: nbdev
-        
+## Testing code
+
+### Why we should test code
+
+![[source](https://the-turing-way.netlify.app/reproducible-research/testing.html)](att/mars-mission.png)
+
+---
+
+### Professional testing
+
+![[source](https://www.youtube.com/watch?v=8qzVV7eEiaI&t=396s)](att/testing-stan-lib.png)
+
+---
+
+### Types of tests
+
+::: {.tiny}
+:::: {.columns}
+::::: {.column width="50%"}
+![[source](https://madewithml.com/courses/mlops/testing/)](att/types-of-tests.png){height=300} 
+
+**Testing frameworks**
+
+- Python: `pytest`
+- R: `testthat`
+:::::
+::::: {.column width="50%"}
+**Analogy**
+
+- during the process of manufacturing a ballpoint pen, the cap, the body, the tail, the ink cartridge and the ballpoint are produced separately and **unit tested** separately. 
+- When two or more units are ready, they are assembled and **integration testing** is performed, for example a test to check the cap fits on the body. 
+- When the complete pen is integrated, **system testing** is performed to check it can be used to write like any pen should. 
+- **Acceptance testing** could be a check to ensure the pen is the colour the customer ordered.
+
+[source](https://the-turing-way.netlify.app/reproducible-research/testing/testing-overview)
+:::::
+::::
+:::
+
+---
+
+### Testing example
+
+using `pytest` for Python
+
+![](att/pytest-example.png)
+
+---
+
+## Documenting code
+
+### Literate programming
+
+::::: {.tiny}
+:::: {.columns}
+::: {.column width="70%"}
+- ‘Literate programming is a methodology that combines a programming language with a **documentation language**, 
+- thereby making programs **more robust**, **more portable**, **more easily maintained**, 
+- and arguably **more fun** to write than programs that are written only in a high-level language. 
+- The main idea is to treat a program as a piece of literature, **addressed to human beings** rather than to a computer. 
+- The program is also viewed as a **hypertext document**, rather like the World Wide Web. (Indeed, I used the word WEB for this purpose long before CERN grabbed it!)’
+
+[Donald Knuth](https://www-cs-faculty.stanford.edu/~knuth/lp.html)
+:::
+::: {.column width="30%"}
+![[source](https://en.wikipedia.org/wiki/Literate_programming#/media/File:Literate_Programming_book_cover.jpg)](att/knuth-literate-programming.png)
+:::
+::::
+:::::
+
+---
+
+### Notebooks
+
+::::: {.smallest}
+:::: {.columns}
+::: {.column width="50%"}
+Python
+
+![[source](https://towardsdatascience.com/the-complete-guide-to-jupyter-notebooks-for-data-science-8ff3591f69a4)](att/jupyter-notebook.png)
+
+:::
+::: {.column width="50%"}
+R
+
+![[source](https://ivelasq.quarto.pub/building-a-blog-with-quarto/workflow/write-docs/index.html)](att/r-literate-programming-quarto.png) 
+:::
+::::
+→ both work with [Quarto](https://quarto.org/)
+:::::
+
+
+---
+
+### Example using `nbdev` for Python
+
+::: {.smallest}
+Programming a deck of cards: <https://github.com/fastai/nbdev_cards/>
+:::
+
+![](att/nbdev-cards-1.png)
+
+---
+
+### Literate testing with `nbdev`
+
+![](att/nbdev-cars-2.png)
+
+---
+
+### Additional benefits of `nbdev`
+
+- publishing documentation via Quarto
+- simple, integrated testing
+- continuous integration
+- dependency management
+- publishing code for PyPI and conda
+
+---
+
+### R: Quarto and RMarkdown
+
+![](att/r-literate-programming-quarto.png)
+
 ---
 
 ## Licensing
 
+::: {.smallest}
 :::: {.columns}
 ::: {.column}
-Code
+**Code**
 
 ![<https://choosealicense.com>](att/choose-a-license.png)
 
+often appropriate: [MIT license](https://choosealicense.com/licenses/mit/)
+
 :::
 ::: {.column}
-Other materials
+**Other materials**
 
 ![<https://creativecommons.org/choose/>](att/license-features.png)
 
 :::
 ::::
+:::
 
 ---
 
 # Data and methods
+
+---
+
+## Diversity in data and methods
+
+CAIS: Forschung zu Digitalisierung und Digitale Gesellschaft
+
+:::: {.columns .smallest}
+::: {.column width="50%"}
+**research fiels**
+
+- education and pedagogy
+- political science
+- sociology
+- communications studies
+- …
+:::
+::: {.column width="50%"}
+**data and methods**
+
+- qualitative interviews
+- text analysis 
+- quantitative surveys
+- experimental designs
+- social media studies
+- …
+:::
+::::
+
+---
+
+![[source](http://ithare.com/cpp-guidelines-made-to-measure-s-one-size-fits-all/)](att/one-size-fits-all.png)
+
+---
+
+## Reasons to share your data
+
+::: {.tiny}
+:::: {.columns}
+::: {.column width="45%"}
+![[source](https://doi.org/10.5281/zenodo.3332807)](att/turing-share-data.png)
+:::
+::: {.column width="55%"}
+- To allow the possibility to fully **reproduce** a scientific study.
+- To prevent duplicate efforts and **speed up scientific progress**. Large amounts of research funds and careers of researchers can be wasted by only sharing a small part of research in the form of publications.
+- To facilitate **collaboration** and increase the impact and quality of scientific research.
+- To make results of research openly available as a **public good**, since research is often publicly funded.
+:::
+::::
+:::
 
 ---
 
@@ -590,36 +766,81 @@ Other materials
 
 ---
 
-## Types of data
+## How to share your data
 
-- interviews
-- questionnaires
-- web
-- social media
+::: {.tiny}
+[Turing Way tutorial](https://the-turing-way.netlify.app/reproducible-research/rdm/rdm-sharing.html)
 
----
-
-# Authoring
-
-Authoring
-: **How** can we organise our project from the beginning so that we can publish outputs in the end?
-
-Publishing
-: **Where** can I publish my work (platforms, research centers infrastructure, ...)? 
-
----
-
-## Plain text
+- Step 1: Select **what data** you want to share; eg.:
+    - ethical concerns
+    - commercial concerns
+- Step 2: Choose a **data repository** or other sharing platform
+    - overview: [re3data](https://www.re3data.org/), [NIH](https://sharing.nih.gov/data-management-and-sharing-policy/sharing-scientific-data/generalist-repositories), [FAIRsharing](https://fairsharing.org/databases)
+    - examples: [Zenodo](https://zenodo.org/), [Dryad](https://datadryad.org/)
+- Step 3: Choose a **licence** and link to your paper and code; e.g.:
+    - [Creative Commons](https://creativecommons.org/choose/)
+    - [Open Data Commons](https://opendatacommons.org/licenses/by/index.html)
+- Step 4: **Upload** your data and documentation
+    - good file organisation
+    - appropriate file formats (e.g. `csv` > `xlsx`)
+:::
 
 ---
 
-## Quarto
+## Sharing social media data
 
-- single source → multiple output formats
-    - PDF for publication outlets
-    - blog
-    - website
-    
+![[source](https://www.frontiersin.org/articles/10.3389/fdata.2022.971974/full)](att/akdeniz-paper-screenshot.png)
+
+---
+
+**Obstacles to data-sharing**
+
+::: {.smallest}
+- Reason 1: Preparing data for sharing is **resource-intensive**
+- Reason 2: Not enough **credit** for data sharing
+- Reason 3: Lack of **confidence** and **knowledge**
+- Reason 4: Data protection **laws**
+- Reason 5: Platform **terms of service**
+- Reason 6: **Copyright**
+- Reason 7: Informed **consent**
+- Reason 8: **Ethical** challenges
+- Reason 9: Lack of common **standards**
+
+[source](https://www.frontiersin.org/articles/10.3389/fdata.2022.971974/full)
+:::
+
+::: {.notes}
+paper on incest
+:::
+
+---
+
+## The case of Twitter
+
+::: {.smallest}
+- stage 1: access costly & legal grey area for scraping
+- stage 2: Research API 🎉
+- stage 3: Elon Musik → X → …
+:::
+
+::: {.fragment}
+![[source](https://www.theverge.com/2023/5/31/23739084/twitter-elon-musk-api-policy-chilling-academic-research)](att/twitter-api-closed-musk.png)
+:::
+
+---
+
+## Data and methods
+
+In groups of shared interests and expertise, make a **digital poster** about challenges and possibilities of working with data in your field of study.
+
+For example, this could tackle issues like collecting, publishing, and sharing data.
+
+Try to make it as concrete and constructive as possible.
+
+You have until **14:20 h** to make the poster.
+
+After that, each group will briefly present their poster.
+
 ---
 
 # Publishing
@@ -666,6 +887,29 @@ Papers with Code
 
 :::
 
+---
+
+# Authoring
+
+Authoring
+: **How** can we organise our project from the beginning so that we can publish outputs in the end?
+
+Publishing
+: **Where** can I publish my work (platforms, research centers infrastructure, ...)? 
+
+---
+
+## Plain text
+
+---
+
+## Quarto
+
+- single source → multiple output formats
+    - PDF for publication outlets
+    - blog
+    - website
+    
 ---
 
 # Resources
