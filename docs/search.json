@@ -1,0 +1,226 @@
+[
+  {
+    "objectID": "opensciws_website.html",
+    "href": "opensciws_website.html",
+    "title": "Open Science and\nResearch Software Engineering",
+    "section": "",
+    "text": "Quirin Würschinger\nq.wuerschinger@lmu.de\nWissenschaftlicher Mitarbeiter and PostDoc in (computational) linguistics\nLMU Munich\n\n\n\n\n\n\n\n\n\n\nCurrent work\n\nresearch\n\nlexical innovation on the web and in social networks\nvariation and change in language use and social polarization in social networks\nusing Large Language Models (LLMs) like ChatGPT for research in linguistics and social science.\n\nteaching: corpus linguistics and research methodology\n\n\nPromoting Open Science in (computational) linguistics at LMU\n\nteaching and applying reproducible corpuslinguistic methods\ncreating and sharing corpora among researchers and students\n\n\n\n\n\n\n\n\n\n\nOpen Science: What is it and why does it make sense?\nProject setup: Learn to efficiently organize your project’s files and folders.\nData, code, and document management: Understand how to effectively manage and maintain your data, code, and documents.\nUtilizing different data types: Discover how to work with various data types, such as interviews, web, and social media data.\nPublication process: Learn about options for publishing your data, code, and documents.\n\n\n\n\n\n\n\n\n\n\nTopic\nStart\nEnd\n\n\n\n\nIntro\n09:00\n09:30\n\n\nOpen Science principles\n09:30\n10:30\n\n\n—\n10:30\n10:50\n\n\nversion control\n10:50\n11:10\n\n\nproject structure\n11:10\n12:00\n\n\ndata\n12:00\n12:30\n\n\n—\n12:30\n13:30\n\n\ncode\n13:30\n14:00\n\n\nmethods\n14:00\n14:30\n\n\nauthoring\n14:30\n15:15\n\n\n—\n15:15\n15:30\n\n\npublishing\n15:30\n16:00\n\n\nopen issues and recap\n16:00\n16:30\n\n\n\n\n\n\n\n\n\n\n\nCAIS: Forschung zu Digitalisierung und Digitale Gesellschaft\n\n\nFachrichtungen\n\nPolitikwissenschaft\nErziehungswissenschaft\nKommunikationswissenschaft\nSoziologie\n…\n\n\nDaten und Methoden\n\nqualitativen Interviews\nTextanalysen\nquantitativen Befragungen\nexperimentellen Designs\nOnline-Plattformen/Social Media\n…\n\n\n\n\n\n\n\n\n\nreproducible workflows\n\nmanaging files and folders\nplain text authoring\nprogramming with Python and R\n\nmethods\n\nquantitative approaches\ntext analysis\nquestionnaires\n\npublishing\n\npapers\ncode and data\n\n\n\n\n\n\n\n\n\n\n\nname\nplace and position\nyour research interest in about 3 sentences for someone outside your field\n\n\n\n\n\nDance your PhD"
+  },
+  {
+    "objectID": "opensciws_website.html#whoami",
+    "href": "opensciws_website.html#whoami",
+    "title": "Open Science and\nResearch Software Engineering",
+    "section": "",
+    "text": "Quirin Würschinger\nq.wuerschinger@lmu.de\nWissenschaftlicher Mitarbeiter and PostDoc in (computational) linguistics\nLMU Munich\n\n\n\n\n\n\n\n\n\n\nCurrent work\n\nresearch\n\nlexical innovation on the web and in social networks\nvariation and change in language use and social polarization in social networks\nusing Large Language Models (LLMs) like ChatGPT for research in linguistics and social science.\n\nteaching: corpus linguistics and research methodology\n\n\nPromoting Open Science in (computational) linguistics at LMU\n\nteaching and applying reproducible corpuslinguistic methods\ncreating and sharing corpora among researchers and students"
+  },
+  {
+    "objectID": "opensciws_website.html#topics",
+    "href": "opensciws_website.html#topics",
+    "title": "Open Science and\nResearch Software Engineering",
+    "section": "",
+    "text": "Open Science: What is it and why does it make sense?\nProject setup: Learn to efficiently organize your project’s files and folders.\nData, code, and document management: Understand how to effectively manage and maintain your data, code, and documents.\nUtilizing different data types: Discover how to work with various data types, such as interviews, web, and social media data.\nPublication process: Learn about options for publishing your data, code, and documents."
+  },
+  {
+    "objectID": "opensciws_website.html#time-table",
+    "href": "opensciws_website.html#time-table",
+    "title": "Open Science and\nResearch Software Engineering",
+    "section": "",
+    "text": "Topic\nStart\nEnd\n\n\n\n\nIntro\n09:00\n09:30\n\n\nOpen Science principles\n09:30\n10:30\n\n\n—\n10:30\n10:50\n\n\nversion control\n10:50\n11:10\n\n\nproject structure\n11:10\n12:00\n\n\ndata\n12:00\n12:30\n\n\n—\n12:30\n13:30\n\n\ncode\n13:30\n14:00\n\n\nmethods\n14:00\n14:30\n\n\nauthoring\n14:30\n15:15\n\n\n—\n15:15\n15:30\n\n\npublishing\n15:30\n16:00\n\n\nopen issues and recap\n16:00\n16:30"
+  },
+  {
+    "objectID": "opensciws_website.html#addressing-different-backgrounds-and-goals",
+    "href": "opensciws_website.html#addressing-different-backgrounds-and-goals",
+    "title": "Open Science and\nResearch Software Engineering",
+    "section": "",
+    "text": "CAIS: Forschung zu Digitalisierung und Digitale Gesellschaft\n\n\nFachrichtungen\n\nPolitikwissenschaft\nErziehungswissenschaft\nKommunikationswissenschaft\nSoziologie\n…\n\n\nDaten und Methoden\n\nqualitativen Interviews\nTextanalysen\nquantitativen Befragungen\nexperimentellen Designs\nOnline-Plattformen/Social Media\n…\n\n\n\n\n\n\n\n\n\nreproducible workflows\n\nmanaging files and folders\nplain text authoring\nprogramming with Python and R\n\nmethods\n\nquantitative approaches\ntext analysis\nquestionnaires\n\npublishing\n\npapers\ncode and data\n\n\n\n\n\n\n\n\n\n\n\nname\nplace and position\nyour research interest in about 3 sentences for someone outside your field\n\n\n\n\n\nDance your PhD"
+  },
+  {
+    "objectID": "opensciws_website.html#what-is-open-science",
+    "href": "opensciws_website.html#what-is-open-science",
+    "title": "Open Science and\nResearch Software Engineering",
+    "section": "What is Open Science",
+    "text": "What is Open Science"
+  },
+  {
+    "objectID": "opensciws_website.html#why-should-we-do-open-science",
+    "href": "opensciws_website.html#why-should-we-do-open-science",
+    "title": "Open Science and\nResearch Software Engineering",
+    "section": "Why should we do Open Science?",
+    "text": "Why should we do Open Science?\n\n\n\n\n\nRichard McElreath: Science as Amateur Software Development\n\n\n\n\n\n\nsource\n\n\n\n\n\n\nsource\n\n\n\n\n\n\nsource\n\n\n\n\n\n\nsource"
+  },
+  {
+    "objectID": "opensciws_website.html#principles-of-open-science",
+    "href": "opensciws_website.html#principles-of-open-science",
+    "title": "Open Science and\nResearch Software Engineering",
+    "section": "Principles of Open Science",
+    "text": "Principles of Open Science\n\n\n\nCenter for Open Science"
+  },
+  {
+    "objectID": "opensciws_website.html#open-science-lifecycle",
+    "href": "opensciws_website.html#open-science-lifecycle",
+    "title": "Open Science and\nResearch Software Engineering",
+    "section": "Open Science lifecycle",
+    "text": "Open Science lifecycle\n\n\n\nCenter for Open Science"
+  },
+  {
+    "objectID": "opensciws_website.html#roles-in-open-science",
+    "href": "opensciws_website.html#roles-in-open-science",
+    "title": "Open Science and\nResearch Software Engineering",
+    "section": "Roles in Open Science",
+    "text": "Roles in Open Science\n\n\nFunders\n\nmake open science part of the selection process, and conditions for grantees conducting research.\n\nPublishers\n\nmake open science part of the review process, and conditions for articles published in their journals.\n\nInstitutions\n\nmake open science part of academic training, and part of the selection process for research positions and evaluation for advancement and promotion.\n\nSocieties\n\nmake open science part of their awards, events, and scholarly norms.\n\nResearchers\n\nenact open science in their work and advocate for broader adoption in their communities.\n\n\n[Center for Open Science]"
+  },
+  {
+    "objectID": "opensciws_website.html#who-profits-from-open-science",
+    "href": "opensciws_website.html#who-profits-from-open-science",
+    "title": "Open Science and\nResearch Software Engineering",
+    "section": "Who profits from Open Science?",
+    "text": "Who profits from Open Science?\n\n\n\nsource"
+  },
+  {
+    "objectID": "opensciws_website.html#what-is-open-science-to-you",
+    "href": "opensciws_website.html#what-is-open-science-to-you",
+    "title": "Open Science and\nResearch Software Engineering",
+    "section": "What is Open Science to you?",
+    "text": "What is Open Science to you?\nWhat do you find interesting, important, or attractive about Open Science?\nhttps://tinyurl.com/opnsci"
+  },
+  {
+    "objectID": "opensciws_website.html#learning-outcomes",
+    "href": "opensciws_website.html#learning-outcomes",
+    "title": "Open Science and\nResearch Software Engineering",
+    "section": "Learning outcomes",
+    "text": "Learning outcomes"
+  },
+  {
+    "objectID": "opensciws_website.html#why-use-version-control",
+    "href": "opensciws_website.html#why-use-version-control",
+    "title": "Open Science and\nResearch Software Engineering",
+    "section": "Why use version control?",
+    "text": "Why use version control?\n\n\n\n\n\n\n\n\nsource"
+  },
+  {
+    "objectID": "opensciws_website.html#git-and-githubgitlab",
+    "href": "opensciws_website.html#git-and-githubgitlab",
+    "title": "Open Science and\nResearch Software Engineering",
+    "section": "git and GitHub/GitLab",
+    "text": "git and GitHub/GitLab\n\n\n\ngit\n\nsoftware on your machine\n\n\n\ngit add scr/tests.py\ngit commit -m 'add tests'\ngit push\n\n\nGitHub and GitLab\n\nservices on a remote server"
+  },
+  {
+    "objectID": "opensciws_website.html#git-commands",
+    "href": "opensciws_website.html#git-commands",
+    "title": "Open Science and\nResearch Software Engineering",
+    "section": "git commands",
+    "text": "git commands\n\n\n\n(source)"
+  },
+  {
+    "objectID": "opensciws_website.html#collaborating-using-github",
+    "href": "opensciws_website.html#collaborating-using-github",
+    "title": "Open Science and\nResearch Software Engineering",
+    "section": "Collaborating using GitHub",
+    "text": "Collaborating using GitHub\n\n\n\n(source)"
+  },
+  {
+    "objectID": "opensciws_website.html#github-workflow",
+    "href": "opensciws_website.html#github-workflow",
+    "title": "Open Science and\nResearch Software Engineering",
+    "section": "GitHub workflow",
+    "text": "GitHub workflow\n\n\n\n(source)"
+  },
+  {
+    "objectID": "opensciws_website.html#how-to-set-up-a-github-repository",
+    "href": "opensciws_website.html#how-to-set-up-a-github-repository",
+    "title": "Open Science and\nResearch Software Engineering",
+    "section": "How to set up a GitHub repository",
+    "text": "How to set up a GitHub repository\n\n\ncreate a repository on GitHub\n\n\n\n(create GitHub account)\nclick on New (https://github.com/new)\nspecify repo name 1\nspecify description\nspecify visibility: private or public\nselect Add a README file\nspecify licence 2\n\n\n\n\n\n\n\n\n\nclone the repository\ngo to the folder where you want your project to live\n\ngit clone https://github.com/wuqui/opensciws.git\n\n\n\nadd changes\n\n\n\ncommit changes\n\n\n\npush changes"
+  },
+  {
+    "objectID": "opensciws_website.html#file-names",
+    "href": "opensciws_website.html#file-names",
+    "title": "Open Science and\nResearch Software Engineering",
+    "section": "File names",
+    "text": "File names\n\n\nFile names should be:\n\nMachine readable\nHuman readable\nOptional: Consistent\nOptional: Play well with default ordering"
+  },
+  {
+    "objectID": "opensciws_website.html#file-structure",
+    "href": "opensciws_website.html#file-structure",
+    "title": "Open Science and\nResearch Software Engineering",
+    "section": "File structure",
+    "text": "File structure\n.\n├── analysis            &lt;- all things data analysis\n│   └── src             &lt;- functions and other source files\n├── comm\n│   ├── internal-comm   &lt;- internal communication such as meeting notes\n│   └── journal-comm    &lt;- communication with the journal, e.g. peer review\n├── data\n│   ├── data_clean      &lt;- clean version of the data\n│   └── data_raw        &lt;- raw data (don't touch)\n├── dissemination\n│   ├── manuscripts\n│   ├── posters\n│   └── presentations\n├── documentation       &lt;- documentation, e.g. data management plan\n└── misc                &lt;- miscellaneous files that don't fit elsewhere\n\n \ntree DIR\ncookie cutters"
+  },
+  {
+    "objectID": "opensciws_website.html#practice-managing-files-and-folders",
+    "href": "opensciws_website.html#practice-managing-files-and-folders",
+    "title": "Open Science and\nResearch Software Engineering",
+    "section": "Practice: managing files and folders",
+    "text": "Practice: managing files and folders"
+  },
+  {
+    "objectID": "opensciws_website.html#fair-data",
+    "href": "opensciws_website.html#fair-data",
+    "title": "Open Science and\nResearch Software Engineering",
+    "section": "FAIR data",
+    "text": "FAIR data\n\n\n\nsource"
+  },
+  {
+    "objectID": "opensciws_website.html#types-of-data",
+    "href": "opensciws_website.html#types-of-data",
+    "title": "Open Science and\nResearch Software Engineering",
+    "section": "Types of data",
+    "text": "Types of data\n\ninterviews\nquestionnaires\nweb\nsocial media"
+  },
+  {
+    "objectID": "opensciws_website.html#reproducibility-et-al.",
+    "href": "opensciws_website.html#reproducibility-et-al.",
+    "title": "Open Science and\nResearch Software Engineering",
+    "section": "Reproducibility et al.",
+    "text": "Reproducibility et al.\n\n\n\nThe Turing Way\n\n\n\n\n\n\n\n\nsource"
+  },
+  {
+    "objectID": "opensciws_website.html#notebooks-and-literate-programming",
+    "href": "opensciws_website.html#notebooks-and-literate-programming",
+    "title": "Open Science and\nResearch Software Engineering",
+    "section": "notebooks and literate programming",
+    "text": "notebooks and literate programming\n\nKnuth\n\napplication\n\nR\nPython: nbdev"
+  },
+  {
+    "objectID": "opensciws_website.html#licensing",
+    "href": "opensciws_website.html#licensing",
+    "title": "Open Science and\nResearch Software Engineering",
+    "section": "Licensing",
+    "text": "Licensing\n\n\nCode\n\n\n\nhttps://choosealicense.com\n\n\n\nOther materials\n\n\n\nhttps://creativecommons.org/choose/"
+  },
+  {
+    "objectID": "opensciws_website.html#plain-text",
+    "href": "opensciws_website.html#plain-text",
+    "title": "Open Science and\nResearch Software Engineering",
+    "section": "Plain text",
+    "text": "Plain text"
+  },
+  {
+    "objectID": "opensciws_website.html#quarto",
+    "href": "opensciws_website.html#quarto",
+    "title": "Open Science and\nResearch Software Engineering",
+    "section": "Quarto",
+    "text": "Quarto\n\nsingle source → multiple output formats\n\nPDF for publication outlets\nblog\nwebsite"
+  },
+  {
+    "objectID": "opensciws_website.html#pre-registration",
+    "href": "opensciws_website.html#pre-registration",
+    "title": "Open Science and\nResearch Software Engineering",
+    "section": "Pre-registration",
+    "text": "Pre-registration\n\n\n\nsource\n\n\n\n\n\n\nsource"
+  },
+  {
+    "objectID": "opensciws_website.html#outlets",
+    "href": "opensciws_website.html#outlets",
+    "title": "Open Science and\nResearch Software Engineering",
+    "section": "Outlets",
+    "text": "Outlets\n\n\nArXiV\n\npreprints\n\nZenodo\n\nall kinds including data, code, preprints, etc.\n\nGitHub and GitLab\n\ncode, software\n\nOpen Science Framework\n\nall kinds including data, code, preprints, preregistration, etc.\n\nSoftware Heritage\n\narchival of code (long-term)\n\nPapers with Code\n\ncode and data for and with papers, mostly Machine Learning\n\n…"
+  },
+  {
+    "objectID": "opensciws_website.html#footnotes",
+    "href": "opensciws_website.html#footnotes",
+    "title": "Open Science and\nResearch Software Engineering",
+    "section": "Footnotes",
+    "text": "Footnotes\n\n\nsafe: lowercase alphabet characters↩︎\ngood choice for many purposes: MIT license↩︎"
+  }
+]

@@ -1,0 +1,1198 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.3.450">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Quirin Würschinger">
+<meta name="dcterms.date" content="2023-09-21">
+
+<title>| Open Science and | Research Software Engineering</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<script src="site_libs/quarto-html/quarto.js"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 20,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+
+</head>
+
+<body>
+
+<div id="quarto-search-results"></div>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#introduction" id="toc-introduction" class="nav-link active" data-scroll-target="#introduction">Introduction</a>
+  <ul class="collapse">
+  <li><a href="#workshop-materials" id="toc-workshop-materials" class="nav-link" data-scroll-target="#workshop-materials">Workshop materials</a></li>
+  <li><a href="#whoami" id="toc-whoami" class="nav-link" data-scroll-target="#whoami">&gt; <code>whoami</code></a></li>
+  <li><a href="#topics" id="toc-topics" class="nav-link" data-scroll-target="#topics">Topics</a></li>
+  <li><a href="#time-table" id="toc-time-table" class="nav-link" data-scroll-target="#time-table">Time table</a></li>
+  <li><a href="#addressing-different-backgrounds-and-goals" id="toc-addressing-different-backgrounds-and-goals" class="nav-link" data-scroll-target="#addressing-different-backgrounds-and-goals">Addressing different backgrounds and goals</a>
+  <ul class="collapse">
+  <li><a href="#backgrounds-and-interests" id="toc-backgrounds-and-interests" class="nav-link" data-scroll-target="#backgrounds-and-interests">Backgrounds and interests</a></li>
+  <li><a href="#main-interests" id="toc-main-interests" class="nav-link" data-scroll-target="#main-interests">Main interests</a></li>
+  <li><a href="#who-are-you" id="toc-who-are-you" class="nav-link" data-scroll-target="#who-are-you">Who are you?</a></li>
+  </ul></li>
+  </ul></li>
+  <li><a href="#open-science-principles" id="toc-open-science-principles" class="nav-link" data-scroll-target="#open-science-principles">Open Science principles</a>
+  <ul class="collapse">
+  <li><a href="#what-is-open-science" id="toc-what-is-open-science" class="nav-link" data-scroll-target="#what-is-open-science">What is Open Science</a></li>
+  <li><a href="#why-should-we-do-open-science" id="toc-why-should-we-do-open-science" class="nav-link" data-scroll-target="#why-should-we-do-open-science">Why should we do Open Science?</a></li>
+  <li><a href="#principles-of-open-science" id="toc-principles-of-open-science" class="nav-link" data-scroll-target="#principles-of-open-science">Principles of Open Science</a></li>
+  <li><a href="#open-science-lifecycle" id="toc-open-science-lifecycle" class="nav-link" data-scroll-target="#open-science-lifecycle">Open Science lifecycle</a></li>
+  <li><a href="#roles-in-open-science" id="toc-roles-in-open-science" class="nav-link" data-scroll-target="#roles-in-open-science">Roles in Open Science</a></li>
+  <li><a href="#who-profits-from-open-science" id="toc-who-profits-from-open-science" class="nav-link" data-scroll-target="#who-profits-from-open-science">Who profits from Open Science?</a></li>
+  <li><a href="#what-is-open-science-to-you" id="toc-what-is-open-science-to-you" class="nav-link" data-scroll-target="#what-is-open-science-to-you">What is Open Science to you?</a></li>
+  <li><a href="#learning-outcomes" id="toc-learning-outcomes" class="nav-link" data-scroll-target="#learning-outcomes">Learning outcomes</a></li>
+  </ul></li>
+  <li><a href="#implementing-an-open-and-reproducible-workflow" id="toc-implementing-an-open-and-reproducible-workflow" class="nav-link" data-scroll-target="#implementing-an-open-and-reproducible-workflow">Implementing an open and reproducible workflow</a></li>
+  <li><a href="#break" id="toc-break" class="nav-link" data-scroll-target="#break">Break</a></li>
+  <li><a href="#taking-notes" id="toc-taking-notes" class="nav-link" data-scroll-target="#taking-notes">Taking notes</a></li>
+  <li><a href="#version-control" id="toc-version-control" class="nav-link" data-scroll-target="#version-control">Version control</a>
+  <ul class="collapse">
+  <li><a href="#why-use-version-control" id="toc-why-use-version-control" class="nav-link" data-scroll-target="#why-use-version-control">Why use version control?</a></li>
+  <li><a href="#git-and-githubgitlab" id="toc-git-and-githubgitlab" class="nav-link" data-scroll-target="#git-and-githubgitlab">git and GitHub/GitLab</a></li>
+  <li><a href="#git-commands" id="toc-git-commands" class="nav-link" data-scroll-target="#git-commands">git commands</a></li>
+  <li><a href="#collaborating-using-github" id="toc-collaborating-using-github" class="nav-link" data-scroll-target="#collaborating-using-github">Collaborating using GitHub</a></li>
+  <li><a href="#github-workflow" id="toc-github-workflow" class="nav-link" data-scroll-target="#github-workflow">GitHub workflow</a></li>
+  <li><a href="#how-to-set-up-a-github-repository" id="toc-how-to-set-up-a-github-repository" class="nav-link" data-scroll-target="#how-to-set-up-a-github-repository">How to set up a GitHub repository</a>
+  <ul class="collapse">
+  <li><a href="#create-a-repository-on-github" id="toc-create-a-repository-on-github" class="nav-link" data-scroll-target="#create-a-repository-on-github">create a repository on GitHub</a></li>
+  <li><a href="#clone-the-repository" id="toc-clone-the-repository" class="nav-link" data-scroll-target="#clone-the-repository"><code>clone</code> the repository</a></li>
+  <li><a href="#add-changes" id="toc-add-changes" class="nav-link" data-scroll-target="#add-changes"><code>add</code> changes</a></li>
+  <li><a href="#commit-changes" id="toc-commit-changes" class="nav-link" data-scroll-target="#commit-changes"><code>commit</code> changes</a></li>
+  <li><a href="#push-changes" id="toc-push-changes" class="nav-link" data-scroll-target="#push-changes"><code>push</code> changes</a></li>
+  </ul></li>
+  </ul></li>
+  <li><a href="#project-structure" id="toc-project-structure" class="nav-link" data-scroll-target="#project-structure">Project structure</a>
+  <ul class="collapse">
+  <li><a href="#file-names" id="toc-file-names" class="nav-link" data-scroll-target="#file-names">File names</a></li>
+  <li><a href="#file-structure" id="toc-file-structure" class="nav-link" data-scroll-target="#file-structure">File structure</a></li>
+  <li><a href="#practice-managing-files-and-folders" id="toc-practice-managing-files-and-folders" class="nav-link" data-scroll-target="#practice-managing-files-and-folders">Practice: managing files and folders</a></li>
+  </ul></li>
+  <li><a href="#data" id="toc-data" class="nav-link" data-scroll-target="#data">Data</a>
+  <ul class="collapse">
+  <li><a href="#fair-data" id="toc-fair-data" class="nav-link" data-scroll-target="#fair-data">FAIR data</a></li>
+  <li><a href="#types-of-data" id="toc-types-of-data" class="nav-link" data-scroll-target="#types-of-data">Types of data</a></li>
+  </ul></li>
+  <li><a href="#code" id="toc-code" class="nav-link" data-scroll-target="#code">Code</a>
+  <ul class="collapse">
+  <li><a href="#reproducibility-et-al." id="toc-reproducibility-et-al." class="nav-link" data-scroll-target="#reproducibility-et-al.">Reproducibility et al.</a></li>
+  <li><a href="#notebooks-and-literate-programming" id="toc-notebooks-and-literate-programming" class="nav-link" data-scroll-target="#notebooks-and-literate-programming">notebooks and literate programming</a></li>
+  <li><a href="#licensing" id="toc-licensing" class="nav-link" data-scroll-target="#licensing">Licensing</a></li>
+  </ul></li>
+  <li><a href="#authoring" id="toc-authoring" class="nav-link" data-scroll-target="#authoring">Authoring</a>
+  <ul class="collapse">
+  <li><a href="#plain-text" id="toc-plain-text" class="nav-link" data-scroll-target="#plain-text">Plain text</a></li>
+  <li><a href="#quarto" id="toc-quarto" class="nav-link" data-scroll-target="#quarto">Quarto</a></li>
+  </ul></li>
+  <li><a href="#publishing" id="toc-publishing" class="nav-link" data-scroll-target="#publishing">Publishing</a>
+  <ul class="collapse">
+  <li><a href="#pre-registration" id="toc-pre-registration" class="nav-link" data-scroll-target="#pre-registration">Pre-registration</a></li>
+  <li><a href="#outlets" id="toc-outlets" class="nav-link" data-scroll-target="#outlets">Outlets</a></li>
+  </ul></li>
+  <li><a href="#resources" id="toc-resources" class="nav-link" data-scroll-target="#resources">Resources</a></li>
+  </ul>
+<div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="opensciws_slides.html"><i class="bi bi-file-slides"></i>RevealJS</a></li></ul></div></nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title"><p>Open Science and<br>
+Research Software Engineering</p></h1>
+<p class="subtitle lead"></p><p>Workshop<br>
+Center for Advanced Internet Studies (CAIS)</p><p></p>
+</div>
+
+
+<div class="quarto-title-meta-author">
+  <div class="quarto-title-meta-heading">Author</div>
+  <div class="quarto-title-meta-heading">Affiliation</div>
+  
+    <div class="quarto-title-meta-contents">
+    <p class="author">Quirin Würschinger </p>
+  </div>
+    <div class="quarto-title-meta-contents">
+        <p class="affiliation">
+            LMU Munich
+          </p>
+      </div>
+    </div>
+
+<div class="quarto-title-meta">
+
+      
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">September 21, 2023</p>
+    </div>
+  </div>
+  
+    
+  </div>
+  
+
+</header>
+
+<section id="introduction" class="level1">
+<h1>Introduction</h1>
+<hr>
+<section id="workshop-materials" class="level2">
+<h2 class="anchored" data-anchor-id="workshop-materials">Workshop materials</h2>
+<hr>
+</section>
+<section id="whoami" class="level2">
+<h2 class="anchored" data-anchor-id="whoami">&gt; <code>whoami</code></h2>
+<div class="tiny">
+<div class="columns">
+<div class="column" style="width:80%;">
+<p>Quirin Würschinger<br>
+<a href="mailto:q.wuerschinger@lmu.de">q.wuerschinger@lmu.de</a><br>
+Wissenschaftlicher Mitarbeiter and PostDoc in (computational) linguistics<br>
+LMU Munich</p>
+</div><div class="column" style="width:20%;">
+<div class="quarto-figure quarto-figure-right">
+<figure class="figure">
+<p><img src="att/qw.png" height="150" class="figure-img"></p>
+</figure>
+</div>
+</div>
+</div>
+<div class="columns">
+<div class="column" style="width:50%;">
+<p><strong>Current work</strong></p>
+<ul>
+<li><strong>research</strong>
+<ul>
+<li>lexical innovation on the web and in social networks</li>
+<li>variation and change in language use and social polarization in social networks</li>
+<li>using Large Language Models (LLMs) like ChatGPT for research in linguistics and social science.</li>
+</ul></li>
+<li><strong>teaching</strong>: corpus linguistics and research methodology</li>
+</ul>
+</div><div class="column" style="width:50%;">
+<p><strong>Promoting Open Science in (computational) linguistics at LMU</strong></p>
+<ul>
+<li>teaching and applying reproducible corpuslinguistic methods</li>
+<li>creating and sharing corpora among researchers and students</li>
+</ul>
+</div>
+</div>
+</div>
+<hr>
+</section>
+<section id="topics" class="level2">
+<h2 class="anchored" data-anchor-id="topics">Topics</h2>
+<div class="smallest">
+<ul>
+<li><strong>Open Science</strong>: What is it and why does it make sense?</li>
+<li><strong>Project setup</strong>: Learn to efficiently organize your project’s files and folders.</li>
+<li><strong>Data, code, and document management</strong>: Understand how to effectively manage and maintain your data, code, and documents.</li>
+<li><strong>Utilizing different data types</strong>: Discover how to work with various data types, such as interviews, web, and social media data.</li>
+<li><strong>Publication process</strong>: Learn about options for publishing your data, code, and documents.</li>
+</ul>
+</div>
+<hr>
+</section>
+<section id="time-table" class="level2">
+<h2 class="anchored" data-anchor-id="time-table">Time table</h2>
+<div class="tiny">
+<table class="table">
+<thead>
+<tr class="header">
+<th>Topic</th>
+<th>Start</th>
+<th>End</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Intro</td>
+<td>09:00</td>
+<td>09:30</td>
+</tr>
+<tr class="even">
+<td>Open Science principles</td>
+<td>09:30</td>
+<td>10:30</td>
+</tr>
+<tr class="odd">
+<td>—</td>
+<td>10:30</td>
+<td>10:50</td>
+</tr>
+<tr class="even">
+<td>version control</td>
+<td>10:50</td>
+<td>11:10</td>
+</tr>
+<tr class="odd">
+<td>project structure</td>
+<td>11:10</td>
+<td>12:00</td>
+</tr>
+<tr class="even">
+<td>data</td>
+<td>12:00</td>
+<td>12:30</td>
+</tr>
+<tr class="odd">
+<td>—</td>
+<td>12:30</td>
+<td>13:30</td>
+</tr>
+<tr class="even">
+<td>code</td>
+<td>13:30</td>
+<td>14:00</td>
+</tr>
+<tr class="odd">
+<td>methods</td>
+<td>14:00</td>
+<td>14:30</td>
+</tr>
+<tr class="even">
+<td>authoring</td>
+<td>14:30</td>
+<td>15:15</td>
+</tr>
+<tr class="odd">
+<td>—</td>
+<td>15:15</td>
+<td>15:30</td>
+</tr>
+<tr class="even">
+<td>publishing</td>
+<td>15:30</td>
+<td>16:00</td>
+</tr>
+<tr class="odd">
+<td>open issues and recap</td>
+<td>16:00</td>
+<td>16:30</td>
+</tr>
+</tbody>
+</table>
+</div>
+<hr>
+</section>
+<section id="addressing-different-backgrounds-and-goals" class="level2">
+<h2 class="anchored" data-anchor-id="addressing-different-backgrounds-and-goals">Addressing different backgrounds and goals</h2>
+<hr>
+<section id="backgrounds-and-interests" class="level3">
+<h3 class="anchored" data-anchor-id="backgrounds-and-interests">Backgrounds and interests</h3>
+<p>CAIS: Forschung zu Digitalisierung und Digitale Gesellschaft</p>
+<div class="columns">
+<div class="column r-fit-text" style="width:50%;">
+<p>Fachrichtungen</p>
+<ul>
+<li>Politikwissenschaft</li>
+<li>Erziehungswissenschaft</li>
+<li>Kommunikationswissenschaft</li>
+<li>Soziologie</li>
+<li>…</li>
+</ul>
+</div><div class="column r-fit-text" style="width:50%;">
+<p>Daten und Methoden</p>
+<ul>
+<li>qualitativen Interviews</li>
+<li>Textanalysen</li>
+<li>quantitativen Befragungen</li>
+<li>experimentellen Designs</li>
+<li>Online-Plattformen/Social Media</li>
+<li>…</li>
+</ul>
+</div>
+</div>
+<hr>
+</section>
+<section id="main-interests" class="level3">
+<h3 class="anchored" data-anchor-id="main-interests">Main interests</h3>
+<div class="smallest">
+<ul>
+<li>reproducible workflows
+<ul>
+<li>managing files and folders</li>
+<li>plain text authoring</li>
+<li>programming with Python and R</li>
+</ul></li>
+<li>methods
+<ul>
+<li>quantitative approaches</li>
+<li>text analysis</li>
+<li>questionnaires</li>
+</ul></li>
+<li>publishing
+<ul>
+<li>papers</li>
+<li>code and data</li>
+</ul></li>
+</ul>
+</div>
+<hr>
+</section>
+<section id="who-are-you" class="level3">
+<h3 class="anchored" data-anchor-id="who-are-you">Who are you?</h3>
+<div class="smaller">
+<div class="columns">
+<div class="column" style="width:60%;">
+<ol type="1">
+<li>name</li>
+<li>place and position</li>
+<li>your research interest in about 3 sentences for someone outside your field</li>
+</ol>
+</div><div class="column" style="width:40%;">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="att/dance-your-phd.png" class="img-fluid figure-img"></p>
+<figcaption class="figure-caption"><a href="https://www.science.org/do/10.1126/science.adh5473/abs/_20230313_on_dance_your_phd_4.jpg">Dance your PhD</a></figcaption>
+</figure>
+</div>
+</div>
+</div>
+</div>
+<hr>
+</section>
+</section>
+</section>
+<section id="open-science-principles" class="level1">
+<h1>Open Science principles</h1>
+<hr>
+<section id="what-is-open-science" class="level2">
+<h2 class="anchored" data-anchor-id="what-is-open-science">What is Open Science</h2>
+<p><img src="att/what-is-open-science.png" class="img-fluid"></p>
+<hr>
+</section>
+<section id="why-should-we-do-open-science" class="level2">
+<h2 class="anchored" data-anchor-id="why-should-we-do-open-science">Why should we do Open Science?</h2>
+<p><img src="att/most-science-is-wrong.png" class="img-fluid"></p>
+<hr>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="att/scientists-mostly-hackers.png" class="img-fluid figure-img"></p>
+<figcaption class="figure-caption"><a href="https://www.youtube.com/watch?v=zwRdO9_GGhY">Richard McElreath: <em>Science as Amateur Software Development</em></a></figcaption>
+</figure>
+</div>
+<hr>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="att/p-hacking.png" class="img-fluid figure-img"></p>
+<figcaption class="figure-caption"><a href="https://projects.fivethirtyeight.com/p-hacking/">source</a></figcaption>
+</figure>
+</div>
+<hr>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="att/factors-irreproducible-research.png" class="img-fluid figure-img"></p>
+<figcaption class="figure-caption"><a href="https://ascl.net/wordpress/wp-content/uploads/2014/01/reproducibility-graphic-online4-e1465141765559.jpg">source</a></figcaption>
+</figure>
+</div>
+<hr>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="att/excel-renaming.png" class="img-fluid figure-img"></p>
+<figcaption class="figure-caption"><a href="https://www.theverge.com/2020/8/6/21355674/human-genes-rename-microsoft-excel-misreading-dates">source</a></figcaption>
+</figure>
+</div>
+<hr>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="att/skills-to-pay-the-bills.png" class="img-fluid figure-img"></p>
+<figcaption class="figure-caption"><a href="https://www.youtube.com/watch?v=zwRdO9_GGhY">source</a></figcaption>
+</figure>
+</div>
+<hr>
+</section>
+<section id="principles-of-open-science" class="level2">
+<h2 class="anchored" data-anchor-id="principles-of-open-science">Principles of Open Science</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="att/open-science-principles.png" class="img-fluid figure-img"></p>
+<figcaption class="figure-caption"><a href="https://www.cos.io/open-science">Center for Open Science</a></figcaption>
+</figure>
+</div>
+<hr>
+</section>
+<section id="open-science-lifecycle" class="level2">
+<h2 class="anchored" data-anchor-id="open-science-lifecycle">Open Science lifecycle</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="att/open-science-lifecycle.png" class="img-fluid figure-img"></p>
+<figcaption class="figure-caption"><a href="https://www.cos.io/open-science">Center for Open Science</a></figcaption>
+</figure>
+</div>
+<hr>
+</section>
+<section id="roles-in-open-science" class="level2">
+<h2 class="anchored" data-anchor-id="roles-in-open-science">Roles in Open Science</h2>
+<div class="smallest">
+<dl>
+<dt>Funders</dt>
+<dd>
+make open science part of the selection process, and conditions for grantees conducting research.
+</dd>
+<dt>Publishers</dt>
+<dd>
+make open science part of the review process, and conditions for articles published in their journals.
+</dd>
+<dt>Institutions</dt>
+<dd>
+make open science part of academic training, and part of the selection process for research positions and evaluation for advancement and promotion.
+</dd>
+<dt>Societies</dt>
+<dd>
+make open science part of their awards, events, and scholarly norms.
+</dd>
+<dt>Researchers</dt>
+<dd>
+enact open science in their work and advocate for broader adoption in their communities.
+</dd>
+</dl>
+<p>[<a href="https://www.cos.io/open-science">Center for Open Science</a>]</p>
+</div>
+<hr>
+</section>
+<section id="who-profits-from-open-science" class="level2">
+<h2 class="anchored" data-anchor-id="who-profits-from-open-science">Who profits from Open Science?</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="att/public-money.png" class="img-fluid figure-img"></p>
+<figcaption class="figure-caption"><a href="https://docs.google.com/presentation/d/1Ae85nKcTAkr-omlTZopN04yV-lPBZJjX9kPMVUlBRVo/edit#slide=id.gfe5b481e28_0_22">source</a></figcaption>
+</figure>
+</div>
+<hr>
+</section>
+<section id="what-is-open-science-to-you" class="level2">
+<h2 class="anchored" data-anchor-id="what-is-open-science-to-you">What is Open Science to you?</h2>
+<p>What do you find interesting, important, or attractive about Open Science?</p>
+<p><a href="https://tinyurl.com/opnsci" class="uri">https://tinyurl.com/opnsci</a></p>
+<hr>
+</section>
+<section id="learning-outcomes" class="level2">
+<h2 class="anchored" data-anchor-id="learning-outcomes">Learning outcomes</h2>
+<p><img src="att/learning-outcomes.png" class="img-fluid"></p>
+<hr>
+</section>
+</section>
+<section id="implementing-an-open-and-reproducible-workflow" class="level1">
+<h1>Implementing an open and reproducible workflow</h1>
+<ol type="1">
+<li>version control</li>
+<li>project structure</li>
+<li>data</li>
+<li>methods</li>
+<li>code</li>
+<li>authoring</li>
+<li>publishing</li>
+</ol>
+<hr>
+</section>
+<section id="break" class="level1">
+<h1>Break</h1>
+<hr>
+</section>
+<section id="taking-notes" class="level1">
+<h1>Taking notes</h1>
+<p>Networked notes</p>
+<ul>
+<li>logseq</li>
+<li>Obsidian</li>
+</ul>
+<hr>
+</section>
+<section id="version-control" class="level1">
+<h1>Version control</h1>
+<hr>
+<section id="why-use-version-control" class="level2">
+<h2 class="anchored" data-anchor-id="why-use-version-control">Why use version control?</h2>
+<div class="columns">
+<div class="column" style="width:40%;">
+<p><img src="att/paper-file-names.png" class="img-fluid"></p>
+</div><div class="column" style="width:60%;">
+<p><img src="att/revision-email.png" class="img-fluid"></p>
+</div>
+</div>
+<div class="smallest">
+<p><a href="https://docs.google.com/presentation/d/1Ae85nKcTAkr-omlTZopN04yV-lPBZJjX9kPMVUlBRVo/edit#slide=id.g23ae9873052_7_56">source</a></p>
+</div>
+<hr>
+</section>
+<section id="git-and-githubgitlab" class="level2">
+<h2 class="anchored" data-anchor-id="git-and-githubgitlab">git and GitHub/GitLab</h2>
+<div class="columns r-fit-text">
+<div class="column" style="width:50%;">
+<dl>
+<dt>git</dt>
+<dd>
+software on your machine
+</dd>
+</dl>
+<p><img src="att/logo-git.png" height="250"></p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> add scr/tests.py</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> commit <span class="at">-m</span> <span class="st">'add tests'</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> push</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div><div class="column" style="width:50%;">
+<dl>
+<dt>GitHub and GitLab</dt>
+<dd>
+services on a remote server
+</dd>
+</dl>
+<div class="columns">
+<div class="column" style="width:50%;">
+<p><img src="att/logo-github.png" height="250"></p>
+</div><div class="column" style="width:50%;">
+<p><img src="att/logo-gitlab.png" height="250"></p>
+</div>
+</div>
+</div>
+</div>
+<hr>
+</section>
+<section id="git-commands" class="level2">
+<h2 class="anchored" data-anchor-id="git-commands">git commands</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="att/git-commands.png" class="img-fluid figure-img"></p>
+<figcaption class="figure-caption"><a href="https://docs.google.com/presentation/d/1Ae85nKcTAkr-omlTZopN04yV-lPBZJjX9kPMVUlBRVo/edit#slide=id.g23ae9873052_7_266">(source)</a></figcaption>
+</figure>
+</div>
+<hr>
+</section>
+<section id="collaborating-using-github" class="level2">
+<h2 class="anchored" data-anchor-id="collaborating-using-github">Collaborating using GitHub</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="att/github-collaboration.png" class="img-fluid figure-img"></p>
+<figcaption class="figure-caption"><a href="https://cdn.duzun.me/images/tips/git_remotes.png">(source)</a></figcaption>
+</figure>
+</div>
+<hr>
+</section>
+<section id="github-workflow" class="level2">
+<h2 class="anchored" data-anchor-id="github-workflow">GitHub workflow</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="att/github-workflow.png" class="img-fluid figure-img"></p>
+<figcaption class="figure-caption"><a href="https://dev.to/mollynem/git-github--workflow-fundamentals-5496">(source)</a></figcaption>
+</figure>
+</div>
+<hr>
+</section>
+<section id="how-to-set-up-a-github-repository" class="level2">
+<h2 class="anchored" data-anchor-id="how-to-set-up-a-github-repository">How to set up a GitHub repository</h2>
+<hr>
+<section id="create-a-repository-on-github" class="level3">
+<h3 class="anchored" data-anchor-id="create-a-repository-on-github">create a repository on GitHub</h3>
+<div class="columns smallest">
+<div class="column" style="width:50%;">
+<ol type="1">
+<li>(create <a href="https://github.com/">GitHub</a> account)</li>
+<li>click on <code>New</code> (<a href="https://github.com/new" class="uri">https://github.com/new</a>)</li>
+<li>specify repo name <a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a></li>
+<li>specify description</li>
+<li>specify visibility: private or public</li>
+<li>select <code>Add a README file</code></li>
+<li>specify licence <a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a></li>
+</ol>
+</div><div class="column" style="width:50%;">
+<!-- ![](att/git-create-repo.png) -->
+<p><img src="att/git-create-repo-long.png" class="img-fluid"></p>
+</div>
+</div>
+<hr>
+</section>
+<section id="clone-the-repository" class="level3">
+<h3 class="anchored" data-anchor-id="clone-the-repository"><code>clone</code> the repository</h3>
+<p>go to the folder where you want your project to live</p>
+<p><img src="att/git-clone.png" class="img-fluid"></p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> clone https://github.com/wuqui/opensciws.git</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<hr>
+</section>
+<section id="add-changes" class="level3">
+<h3 class="anchored" data-anchor-id="add-changes"><code>add</code> changes</h3>
+<hr>
+</section>
+<section id="commit-changes" class="level3">
+<h3 class="anchored" data-anchor-id="commit-changes"><code>commit</code> changes</h3>
+<hr>
+</section>
+<section id="push-changes" class="level3">
+<h3 class="anchored" data-anchor-id="push-changes"><code>push</code> changes</h3>
+<hr>
+</section>
+</section>
+</section>
+<section id="project-structure" class="level1">
+<h1>Project structure</h1>
+<div class="columns">
+<div class="column" style="width:50%;">
+<p><img src="att/genius-einstein.png" class="img-fluid"></p>
+</div><div class="column" style="width:50%;">
+<p><img src="att/genius-trump.gif" class="img-fluid" alt="source"> Let’s not pretend we’re all geniuses …</p>
+</div>
+</div>
+<hr>
+<section id="file-names" class="level2">
+<h2 class="anchored" data-anchor-id="file-names">File names</h2>
+<p><img src="att/file-names.png" class="img-fluid"></p>
+<div class="smallest">
+<p>File names should be:</p>
+<ul>
+<li>Machine readable</li>
+<li>Human readable</li>
+<li>Optional: Consistent</li>
+<li>Optional: Play well with default ordering</li>
+</ul>
+</div>
+<hr>
+</section>
+<section id="file-structure" class="level2">
+<h2 class="anchored" data-anchor-id="file-structure">File structure</h2>
+<pre><code>.
+├── analysis            &lt;- all things data analysis
+│   └── src             &lt;- functions and other source files
+├── comm
+│   ├── internal-comm   &lt;- internal communication such as meeting notes
+│   └── journal-comm    &lt;- communication with the journal, e.g. peer review
+├── data
+│   ├── data_clean      &lt;- clean version of the data
+│   └── data_raw        &lt;- raw data (don't touch)
+├── dissemination
+│   ├── manuscripts
+│   ├── posters
+│   └── presentations
+├── documentation       &lt;- documentation, e.g. data management plan
+└── misc                &lt;- miscellaneous files that don't fit elsewhere
+</code></pre>
+<p>&nbsp;</p>
+<div class="sourceCode" id="cb4"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="ex">tree</span> DIR</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>cookie cutters</p>
+<hr>
+</section>
+<section id="practice-managing-files-and-folders" class="level2">
+<h2 class="anchored" data-anchor-id="practice-managing-files-and-folders">Practice: managing files and folders</h2>
+<hr>
+</section>
+</section>
+<section id="data" class="level1">
+<h1>Data</h1>
+<hr>
+<section id="fair-data" class="level2">
+<h2 class="anchored" data-anchor-id="fair-data">FAIR data</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="att/fair-data.png" class="img-fluid figure-img"></p>
+<figcaption class="figure-caption"><a href="https://libereurope.eu/article/fairdataconsultation/">source</a></figcaption>
+</figure>
+</div>
+<hr>
+</section>
+<section id="types-of-data" class="level2">
+<h2 class="anchored" data-anchor-id="types-of-data">Types of data</h2>
+<ul>
+<li>interviews</li>
+<li>questionnaires</li>
+<li>web</li>
+<li>social media</li>
+</ul>
+<hr>
+</section>
+</section>
+<section id="code" class="level1">
+<h1>Code</h1>
+<hr>
+<section id="reproducibility-et-al." class="level2">
+<h2 class="anchored" data-anchor-id="reproducibility-et-al.">Reproducibility et al.</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="att/reproducibility-matrix.png" class="img-fluid figure-img"></p>
+<figcaption class="figure-caption"><a href="https://the-turing-way.netlify.app/reproducible-research/overview/overview-definitions.html">The Turing Way</a></figcaption>
+</figure>
+</div>
+<hr>
+<p><img src="att/reproducibility-ruler.png" class="img-fluid"></p>
+<hr>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="att/reproducibility-numbers.png" class="img-fluid figure-img"></p>
+<figcaption class="figure-caption"><a href="https://www.youtube.com/watch?v=zwRdO9_GGhY">source</a></figcaption>
+</figure>
+</div>
+<hr>
+</section>
+<section id="notebooks-and-literate-programming" class="level2">
+<h2 class="anchored" data-anchor-id="notebooks-and-literate-programming">notebooks and literate programming</h2>
+<ul>
+<li>Knuth
+<ul>
+<li>application
+<ul>
+<li>R</li>
+<li>Python: nbdev</li>
+</ul></li>
+</ul></li>
+</ul>
+<hr>
+</section>
+<section id="licensing" class="level2">
+<h2 class="anchored" data-anchor-id="licensing">Licensing</h2>
+<div class="columns">
+<div class="column">
+<p>Code</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="att/choose-a-license.png" class="img-fluid figure-img"></p>
+<figcaption class="figure-caption"><a href="https://choosealicense.com" class="uri">https://choosealicense.com</a></figcaption>
+</figure>
+</div>
+</div><div class="column">
+<p>Other materials</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="att/license-features.png" class="img-fluid figure-img"></p>
+<figcaption class="figure-caption"><a href="https://creativecommons.org/choose/" class="uri">https://creativecommons.org/choose/</a></figcaption>
+</figure>
+</div>
+</div>
+</div>
+<hr>
+</section>
+</section>
+<section id="authoring" class="level1">
+<h1>Authoring</h1>
+<dl>
+<dt>Authoring</dt>
+<dd>
+<strong>How</strong> can we organise our project from the beginning so that we can publish outputs in the end?
+</dd>
+<dt>Publishing</dt>
+<dd>
+<strong>Where</strong> can I publish my work (platforms, research centers infrastructure, …)?
+</dd>
+</dl>
+<hr>
+<section id="plain-text" class="level2">
+<h2 class="anchored" data-anchor-id="plain-text">Plain text</h2>
+<hr>
+</section>
+<section id="quarto" class="level2">
+<h2 class="anchored" data-anchor-id="quarto">Quarto</h2>
+<ul>
+<li>single source → multiple output formats
+<ul>
+<li>PDF for publication outlets</li>
+<li>blog</li>
+<li>website</li>
+</ul></li>
+</ul>
+<hr>
+</section>
+</section>
+<section id="publishing" class="level1">
+<h1>Publishing</h1>
+<p>How: How can we organise our project from the beginning so that we can publish outputs in the end? Where: Where can I publish my work (platforms, research centers infrastructure, …)?</p>
+<hr>
+<section id="pre-registration" class="level2">
+<h2 class="anchored" data-anchor-id="pre-registration">Pre-registration</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="att/pre-registration.png" class="img-fluid figure-img"></p>
+<figcaption class="figure-caption"><a href="https://www.cos.io/initiatives/registered-reports">source</a></figcaption>
+</figure>
+</div>
+<hr>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="att/pre-registration-cycle.png" class="img-fluid figure-img"></p>
+<figcaption class="figure-caption"><a href="https://www.cos.io/initiatives/registered-reports">source</a></figcaption>
+</figure>
+</div>
+<hr>
+</section>
+<section id="outlets" class="level2">
+<h2 class="anchored" data-anchor-id="outlets">Outlets</h2>
+<div class="smallest">
+<dl>
+<dt>ArXiV</dt>
+<dd>
+preprints
+</dd>
+<dt>Zenodo</dt>
+<dd>
+all kinds including data, code, preprints, etc.
+</dd>
+<dt>GitHub and GitLab</dt>
+<dd>
+code, software
+</dd>
+<dt>Open Science Framework</dt>
+<dd>
+all kinds including data, code, preprints, preregistration, etc.
+</dd>
+<dt>Software Heritage</dt>
+<dd>
+archival of code (long-term)
+</dd>
+<dt>Papers with Code</dt>
+<dd>
+code and data for and with papers, mostly Machine Learning
+</dd>
+<dt>…</dt>
+<dd>
+
+</dd>
+</dl>
+</div>
+<hr>
+</section>
+</section>
+<section id="resources" class="level1">
+<h1>Resources</h1>
+<ul>
+<li>DRA</li>
+<li>The Turing Way</li>
+<li>Data Carpentries</li>
+</ul>
+
+
+</section>
+
+
+<div id="quarto-appendix" class="default"><section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
+
+<ol>
+<li id="fn1"><p>safe: lowercase alphabet characters<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn2"><p>good choice for many purposes: MIT license<a href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+</ol>
+</section></div></main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+</body></html>
