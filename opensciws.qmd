@@ -23,7 +23,11 @@ format:
     toc: true
 ---
 
-# What this workshop will be about
+# Introduction
+
+---
+
+## Workshop materials
 
 ---
 
