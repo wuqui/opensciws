@@ -21,6 +21,7 @@ format:
   html:
     output-file: opensciws_website.html
     toc: true
+  pdf: default
 ---
 
 # Introduction
@@ -425,7 +426,9 @@ git clone https://github.com/wuqui/opensciws.git
 ![](att/genius-einstein.png)
 :::
 ::: {.column width="50%"}
+:::: {.content-visible unless-format="pdf"}
 ![[source](https://docs.google.com/presentation/d/1Ae85nKcTAkr-omlTZopN04yV-lPBZJjX9kPMVUlBRVo/edit#slide=id.g230f92d131c_0_86)](att/genius-trump.gif)
+::::
 Let’s not pretend we’re all geniuses …
 :::
 ::::
