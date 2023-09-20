@@ -29,6 +29,15 @@ format:
 
 ## Workshop materials
 
+GitHub repository
+: https://github.com/wuqui/opensciws
+
+slides
+: https://wuqui.github.io/opensciws/opensciws_slides.html
+
+website version
+: https://wuqui.github.io/opensciws/opensciws_website.html
+
 ---
 
 ## > `whoami`
