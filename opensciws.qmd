@@ -79,7 +79,7 @@ website version
 
 ---
 
-## **Open** Open Science workshop
+## `Open` Open Science workshop
 
 Focus on …
 
@@ -88,24 +88,25 @@ Focus on …
 - apply and practice
 - collaborate
 
+---
+
 ## Time table
 
-::: {.tiny} 
-| Topic                   | Start | End   |
-|-------------------------|-------|-------|
-| Intro                   | 09:00 | 09:30 |
-| Open Science principles | 09:30 | 10:30 |
-| ---                     | 10:30 | 10:50 |
-| version control         | 10:50 | 11:10 |
-| project structure       | 11:10 | 12:00 |
-| data                    | 12:00 | 12:30 |
-| ---                     | 12:30 | 13:30 |
-| code                    | 13:30 | 14:00 |
-| methods                 | 14:00 | 14:30 |
-| authoring               | 14:30 | 15:15 |
-| ---                     | 15:15 | 15:30 |
-| publishing              | 15:30 | 16:00 |
-| open issues and recap   | 16:00 | 16:30 |
+::: {.tiny}
+| Topic                        | Start | End   |
+|------------------------------|-------|-------|
+| intro                        | 09:00 |       |
+| Open Science principles      |       | 10:30 |
+| ~                            |       |       |
+| version control              | 10:50 |       |
+| project structure            |       | 12:00 |
+| ~                            |       |       |
+| code                         | 13:15 |       |
+| data and methods             |       | 14:40 |
+| ~                            |       |       |
+| publishing                   | 15:00 |       |
+| authoring                    |       | 15:25 |
+| recap, open issues, feedback | 16:00 | 16:30 |
 :::
 
 ---
@@ -147,15 +148,15 @@ CAIS: Forschung zu Digitalisierung und Digitale Gesellschaft
 ::: {.smallest}
 - reproducible workflows
     - managing files and folders
-    - plain text authoring
     - programming with Python and R
-- methods
-    - quantitative approaches
+    - plain text authoring
+- data and methods
     - text analysis
+    - social media analysis
     - questionnaires
 - publishing
-    - authoring papers
     - sharing data and code
+    - authoring papers
 :::
 
 ---
@@ -283,15 +284,16 @@ What do you find interesting, important, or attractive about Open Science?
 
 1. version control
 1. project structure
-1. data
-1. methods
 1. code
+1. data and methods
 1. authoring
 1. publishing
 
 ---
 
+::: {.content-visible when-format="revealjs"}
 # Break
+:::
 
 ---
 
@@ -525,6 +527,13 @@ You have until 11:50 h to work on either …
 1. refactoring/cleaning an existing project^[make a backup first]
 
 Optionally: set up version control via git/GitHub for this project.
+
+---
+
+
+::: {.content-visible when-format="revealjs"}
+# Break
+:::
 
 ---
 
@@ -843,6 +852,12 @@ After that, each group will briefly present their poster.
 
 ---
 
+::: {.content-visible when-format="revealjs"}
+# Break
+:::
+
+---
+
 # Publishing
 
 ---
@@ -927,7 +942,9 @@ Papers with Code
 
 # Authoring
 
-## Plain text
+---
+
+## Plain text authoring
 
 ![[source](https://www.reddit.com/r/LaTeX/comments/z2ifki/latex_vs_word_vs_pandoc_markdown/)](att/tex-md-docs-learning-curve.png)
 
@@ -1035,3 +1052,7 @@ further steps
 - refactoring existing document (e.g. paper, website) to Quarto Markdown
 
 :::
+
+---
+
+# Recap, open issues, feedback

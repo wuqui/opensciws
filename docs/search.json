@@ -4,7 +4,7 @@
     "href": "opensciws_website.html",
     "title": "Open Science and\nResearch Software Engineering",
     "section": "",
-    "text": "Quirin Würschinger\nq.wuerschinger@lmu.de\nWissenschaftlicher Mitarbeiter and PostDoc in (computational) linguistics\nLMU Munich\n\n\n\n\n\n\n\n\n\n\nCurrent work\n\nresearch\n\nlexical innovation on the web and in social networks\nvariation and change in language use and social polarization in social networks\nusing Large Language Models (LLMs) like ChatGPT for research in linguistics and social science.\n\nteaching: corpus linguistics and research methodology\n\n\nPromoting Open Science in (computational) linguistics at LMU\n\nteaching and applying reproducible corpuslinguistic methods\ncreating and sharing corpora among researchers and students\n\n\n\n\n\n\n\n\n\nGitHub repository\n\nhttps://github.com/wuqui/opensciws\n\nslides\n\nhttps://wuqui.github.io/opensciws/opensciws_slides.html\n\nwebsite version\n\nhttps://wuqui.github.io/opensciws/opensciws_website.html\n\n\n\n\n\n\nFocus on …\n\nask questions\ndiscuss\napply and practice\ncollaborate\n\n\n\n\n\n\n\n\nTopic\nStart\nEnd\n\n\n\n\nIntro\n09:00\n09:30\n\n\nOpen Science principles\n09:30\n10:30\n\n\n—\n10:30\n10:50\n\n\nversion control\n10:50\n11:10\n\n\nproject structure\n11:10\n12:00\n\n\ndata\n12:00\n12:30\n\n\n—\n12:30\n13:30\n\n\ncode\n13:30\n14:00\n\n\nmethods\n14:00\n14:30\n\n\nauthoring\n14:30\n15:15\n\n\n—\n15:15\n15:30\n\n\npublishing\n15:30\n16:00\n\n\nopen issues and recap\n16:00\n16:30\n\n\n\n\n\n\n\n\n\n\n\nCAIS: Forschung zu Digitalisierung und Digitale Gesellschaft\n\n\nresearch fiels\n\neducation and pedagogy\npolitical science\nsociology\ncommunications studies\n…\n\n\ndata and methods\n\nqualitative interviews\ntext analysis\nquantitative surveys\nexperimental designs\nsocial media studies\n…\n\n\n\n\n\n\n\n\n\nreproducible workflows\n\nmanaging files and folders\nplain text authoring\nprogramming with Python and R\n\nmethods\n\nquantitative approaches\ntext analysis\nquestionnaires\n\npublishing\n\nauthoring papers\nsharing data and code\n\n\n\n\n\n\n\nPlease briefly introduce yourself …\n\n\n\n\nname\nplace and position\nyour research interest in about 3 sentences for someone outside your field\n\n\n\n\n\nDance your PhD"
+    "text": "Quirin Würschinger\nq.wuerschinger@lmu.de\nWissenschaftlicher Mitarbeiter and PostDoc in (computational) linguistics\nLMU Munich\n\n\n\n\n\n\n\n\n\n\nCurrent work\n\nresearch\n\nlexical innovation on the web and in social networks\nvariation and change in language use and social polarization in social networks\nusing Large Language Models (LLMs) like ChatGPT for research in linguistics and social science.\n\nteaching: corpus linguistics and research methodology\n\n\nPromoting Open Science in (computational) linguistics at LMU\n\nteaching and applying reproducible corpuslinguistic methods\ncreating and sharing corpora among researchers and students\n\n\n\n\n\n\n\n\n\nGitHub repository\n\nhttps://github.com/wuqui/opensciws\n\nslides\n\nhttps://wuqui.github.io/opensciws/opensciws_slides.html\n\nwebsite version\n\nhttps://wuqui.github.io/opensciws/opensciws_website.html\n\n\n\n\n\n\nFocus on …\n\nask questions\ndiscuss\napply and practice\ncollaborate\n\n\n\n\n\n\n\n\n\nTopic\nStart\nEnd\n\n\n\n\nintro\n09:00\n\n\n\nOpen Science principles\n\n10:30\n\n\n~\n\n\n\n\nversion control\n10:50\n\n\n\nproject structure\n\n12:00\n\n\n~\n\n\n\n\ncode\n13:15\n\n\n\ndata and methods\n\n14:40\n\n\n~\n\n\n\n\npublishing\n15:00\n\n\n\nauthoring\n\n15:25\n\n\nrecap, open issues, feedback\n16:00\n16:30\n\n\n\n\n\n\n\n\n\n\n\nCAIS: Forschung zu Digitalisierung und Digitale Gesellschaft\n\n\nresearch fiels\n\neducation and pedagogy\npolitical science\nsociology\ncommunications studies\n…\n\n\ndata and methods\n\nqualitative interviews\ntext analysis\nquantitative surveys\nexperimental designs\nsocial media studies\n…\n\n\n\n\n\n\n\n\n\nreproducible workflows\n\nmanaging files and folders\nprogramming with Python and R\nplain text authoring\n\ndata and methods\n\ntext analysis\nsocial media analysis\nquestionnaires\n\npublishing\n\nsharing data and code\nauthoring papers\n\n\n\n\n\n\n\nPlease briefly introduce yourself …\n\n\n\n\nname\nplace and position\nyour research interest in about 3 sentences for someone outside your field\n\n\n\n\n\nDance your PhD"
   },
   {
     "objectID": "opensciws_website.html#whoami",
@@ -32,14 +32,14 @@
     "href": "opensciws_website.html#time-table",
     "title": "Open Science and\nResearch Software Engineering",
     "section": "",
-    "text": "Topic\nStart\nEnd\n\n\n\n\nIntro\n09:00\n09:30\n\n\nOpen Science principles\n09:30\n10:30\n\n\n—\n10:30\n10:50\n\n\nversion control\n10:50\n11:10\n\n\nproject structure\n11:10\n12:00\n\n\ndata\n12:00\n12:30\n\n\n—\n12:30\n13:30\n\n\ncode\n13:30\n14:00\n\n\nmethods\n14:00\n14:30\n\n\nauthoring\n14:30\n15:15\n\n\n—\n15:15\n15:30\n\n\npublishing\n15:30\n16:00\n\n\nopen issues and recap\n16:00\n16:30"
+    "text": "Topic\nStart\nEnd\n\n\n\n\nintro\n09:00\n\n\n\nOpen Science principles\n\n10:30\n\n\n~\n\n\n\n\nversion control\n10:50\n\n\n\nproject structure\n\n12:00\n\n\n~\n\n\n\n\ncode\n13:15\n\n\n\ndata and methods\n\n14:40\n\n\n~\n\n\n\n\npublishing\n15:00\n\n\n\nauthoring\n\n15:25\n\n\nrecap, open issues, feedback\n16:00\n16:30"
   },
   {
     "objectID": "opensciws_website.html#addressing-different-backgrounds-and-goals",
     "href": "opensciws_website.html#addressing-different-backgrounds-and-goals",
     "title": "Open Science and\nResearch Software Engineering",
     "section": "",
-    "text": "CAIS: Forschung zu Digitalisierung und Digitale Gesellschaft\n\n\nresearch fiels\n\neducation and pedagogy\npolitical science\nsociology\ncommunications studies\n…\n\n\ndata and methods\n\nqualitative interviews\ntext analysis\nquantitative surveys\nexperimental designs\nsocial media studies\n…\n\n\n\n\n\n\n\n\n\nreproducible workflows\n\nmanaging files and folders\nplain text authoring\nprogramming with Python and R\n\nmethods\n\nquantitative approaches\ntext analysis\nquestionnaires\n\npublishing\n\nauthoring papers\nsharing data and code\n\n\n\n\n\n\n\nPlease briefly introduce yourself …\n\n\n\n\nname\nplace and position\nyour research interest in about 3 sentences for someone outside your field\n\n\n\n\n\nDance your PhD"
+    "text": "CAIS: Forschung zu Digitalisierung und Digitale Gesellschaft\n\n\nresearch fiels\n\neducation and pedagogy\npolitical science\nsociology\ncommunications studies\n…\n\n\ndata and methods\n\nqualitative interviews\ntext analysis\nquantitative surveys\nexperimental designs\nsocial media studies\n…\n\n\n\n\n\n\n\n\n\nreproducible workflows\n\nmanaging files and folders\nprogramming with Python and R\nplain text authoring\n\ndata and methods\n\ntext analysis\nsocial media analysis\nquestionnaires\n\npublishing\n\nsharing data and code\nauthoring papers\n\n\n\n\n\n\n\nPlease briefly introduce yourself …\n\n\n\n\nname\nplace and position\nyour research interest in about 3 sentences for someone outside your field\n\n\n\n\n\nDance your PhD"
   },
   {
     "objectID": "opensciws_website.html#what-is-open-science",
@@ -259,11 +259,11 @@
     "text": "Outlets\n\n\nArXiV\n\npreprints\n\nZenodo\n\nall kinds including data, code, preprints, etc.\n\nGitHub and GitLab\n\ncode, software\n\nOpen Science Framework\n\nall kinds including data, code, preprints, preregistration, etc.\n\nSoftware Heritage\n\narchival of code (long-term)\n\nPapers with Code\n\ncode and data for and with papers, mostly Machine Learning\n\n…"
   },
   {
-    "objectID": "opensciws_website.html#plain-text",
-    "href": "opensciws_website.html#plain-text",
+    "objectID": "opensciws_website.html#plain-text-authoring",
+    "href": "opensciws_website.html#plain-text-authoring",
     "title": "Open Science and\nResearch Software Engineering",
-    "section": "Plain text",
-    "text": "Plain text\n\n\n\nsource"
+    "section": "Plain text authoring",
+    "text": "Plain text authoring\n\n\n\nsource"
   },
   {
     "objectID": "opensciws_website.html#markdown-syntax",
