@@ -199,7 +199,13 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   </ul></li>
   <li><a href="#publishing" id="toc-publishing" class="nav-link" data-scroll-target="#publishing">Publishing</a>
   <ul class="collapse">
-  <li><a href="#pre-registration" id="toc-pre-registration" class="nav-link" data-scroll-target="#pre-registration">Pre-registration</a></li>
+  <li><a href="#open-access" id="toc-open-access" class="nav-link" data-scroll-target="#open-access">Open access</a></li>
+  <li><a href="#preregistration" id="toc-preregistration" class="nav-link" data-scroll-target="#preregistration">Preregistration</a>
+  <ul class="collapse">
+  <li><a href="#what-is-preregistration" id="toc-what-is-preregistration" class="nav-link" data-scroll-target="#what-is-preregistration">What is preregistration?</a></li>
+  <li><a href="#the-preregistration-process" id="toc-the-preregistration-process" class="nav-link" data-scroll-target="#the-preregistration-process">The preregistration process</a></li>
+  <li><a href="#avoiding-pitfalls-through-preregistration" id="toc-avoiding-pitfalls-through-preregistration" class="nav-link" data-scroll-target="#avoiding-pitfalls-through-preregistration">Avoiding pitfalls through preregistration</a></li>
+  </ul></li>
   <li><a href="#outlets" id="toc-outlets" class="nav-link" data-scroll-target="#outlets">Outlets</a></li>
   </ul></li>
   <li><a href="#authoring" id="toc-authoring" class="nav-link" data-scroll-target="#authoring">Authoring</a>
@@ -1041,7 +1047,7 @@ services on a remote server
 <ul>
 <li>publishing documentation via Quarto</li>
 <li>simple, integrated testing</li>
-<li>continuous integration</li>
+<li><a href="https://the-turing-way.netlify.app/reproducible-research/ci.html">continuous integration</a></li>
 <li>dependency management</li>
 <li>publishing code for PyPI and conda</li>
 </ul>
@@ -1239,10 +1245,45 @@ services on a remote server
 </section>
 <section id="publishing" class="level1">
 <h1>Publishing</h1>
-<p>How: How can we organise our project from the beginning so that we can publish outputs in the end? Where: Where can I publish my work (platforms, research centers infrastructure, …)?</p>
 <hr>
-<section id="pre-registration" class="level2">
-<h2 class="anchored" data-anchor-id="pre-registration">Pre-registration</h2>
+<section id="open-access" class="level2">
+<h2 class="anchored" data-anchor-id="open-access">Open access</h2>
+<p><a href="https://the-turing-way.netlify.app/reproducible-research/open/open-access.html">The Turing Way tutorial on open access</a></p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="att/turing-open-access-advantages.png" class="img-fluid figure-img"></p>
+<figcaption class="figure-caption"><a href="https://the-turing-way.netlify.app/reproducible-research/open/open-access.html">source</a></figcaption>
+</figure>
+</div>
+<hr>
+<p><strong>Routes to open access publishing</strong></p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="att/turing-open-access-routes.png" class="img-fluid figure-img"></p>
+<figcaption class="figure-caption"><a href="https://the-turing-way.netlify.app/reproducible-research/open/open-access.html">source</a></figcaption>
+</figure>
+</div>
+<hr>
+</section>
+<section id="preregistration" class="level2">
+<h2 class="anchored" data-anchor-id="preregistration">Preregistration</h2>
+<section id="what-is-preregistration" class="level3">
+<h3 class="anchored" data-anchor-id="what-is-preregistration">What is preregistration?</h3>
+<div class="smallest">
+<p>When you preregister your research, you’re simply specifying your <strong>research plan</strong> <strong>in advance</strong> of your study and submitting it to a registry.</p>
+<p>Preregistration separates <strong>hypothesis-generating</strong> (exploratory) from <strong>hypothesis-testing</strong> (confirmatory) research.</p>
+<ul>
+<li>Both are important.</li>
+<li>But the same data cannot be used to generate and test a hypothesis, which can happen unintentionally and reduce the credibility of your results.</li>
+<li>Addressing this problem through planning improves the quality and transparency of your research.</li>
+<li>This helps you clearly report your study and helps others who may wish to build on it.</li>
+</ul>
+<p><a href="https://www.cos.io/initiatives/prereg">Open Science Center tutorial</a></p>
+</div>
+<hr>
+</section>
+<section id="the-preregistration-process" class="level3">
+<h3 class="anchored" data-anchor-id="the-preregistration-process">The preregistration process</h3>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="att/pre-registration.png" class="img-fluid figure-img"></p>
@@ -1250,13 +1291,20 @@ services on a remote server
 </figure>
 </div>
 <hr>
+</section>
+<section id="avoiding-pitfalls-through-preregistration" class="level3">
+<h3 class="anchored" data-anchor-id="avoiding-pitfalls-through-preregistration">Avoiding pitfalls through preregistration</h3>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="att/pre-registration-cycle.png" class="img-fluid figure-img"></p>
 <figcaption class="figure-caption"><a href="https://www.cos.io/initiatives/registered-reports">source</a></figcaption>
 </figure>
 </div>
+<div class="tiny">
+<p><em>HARKing</em>: hypothesizing after results are known</p>
+</div>
 <hr>
+</section>
 </section>
 <section id="outlets" class="level2">
 <h2 class="anchored" data-anchor-id="outlets">Outlets</h2>

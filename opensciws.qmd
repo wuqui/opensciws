@@ -671,7 +671,7 @@ Programming a deck of cards: <https://github.com/fastai/nbdev_cards/>
 
 - publishing documentation via Quarto
 - simple, integrated testing
-- continuous integration
+- [continuous integration](https://the-turing-way.netlify.app/reproducible-research/ci.html)
 - dependency management
 - publishing code for PyPI and conda
 
@@ -845,18 +845,54 @@ After that, each group will briefly present their poster.
 
 # Publishing
 
-How: How can we organise our project from the beginning so that we can publish outputs in the end?
-Where: Where can I publish my work (platforms, research centers infrastructure, ...)? 
+---
+
+## Open access
+
+[The Turing Way tutorial on open access](https://the-turing-way.netlify.app/reproducible-research/open/open-access.html)
+
+![[source](https://the-turing-way.netlify.app/reproducible-research/open/open-access.html)](att/turing-open-access-advantages.png)
 
 ---
 
-## Pre-registration
+**Routes to open access publishing**
+
+![[source](https://the-turing-way.netlify.app/reproducible-research/open/open-access.html)](att/turing-open-access-routes.png)
+
+---
+
+## Preregistration
+
+### What is preregistration?
+::: {.smallest}
+
+When you preregister your research, you're simply specifying your **research plan** **in advance** of your study and submitting it to a registry. 
+
+Preregistration separates **hypothesis-generating** (exploratory) from **hypothesis-testing** (confirmatory) research. 
+
+- Both are important. 
+- But the same data cannot be used to generate and test a hypothesis, which can happen unintentionally and reduce the credibility of your results. 
+- Addressing this problem through planning improves the quality and transparency of your research. 
+- This helps you clearly report your study and helps others who may wish to build on it.
+
+[Open Science Center tutorial](https://www.cos.io/initiatives/prereg)
+:::
+
+---
+
+### The preregistration process
 
 ![[source](https://www.cos.io/initiatives/registered-reports)](att/pre-registration.png)
 
 ---
 
+### Avoiding pitfalls through preregistration
+
 ![[source](https://www.cos.io/initiatives/registered-reports)](att/pre-registration-cycle.png)
+
+::: {.tiny}
+*HARKing*: hypothesizing after results are known
+:::
 
 ---
 
