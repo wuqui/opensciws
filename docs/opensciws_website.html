@@ -211,9 +211,17 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <li><a href="#authoring" id="toc-authoring" class="nav-link" data-scroll-target="#authoring">Authoring</a>
   <ul class="collapse">
   <li><a href="#plain-text" id="toc-plain-text" class="nav-link" data-scroll-target="#plain-text">Plain text</a></li>
-  <li><a href="#quarto" id="toc-quarto" class="nav-link" data-scroll-target="#quarto">Quarto</a></li>
+  <li><a href="#markdown-syntax" id="toc-markdown-syntax" class="nav-link" data-scroll-target="#markdown-syntax">Markdown syntax</a></li>
+  <li><a href="#benefits-of-markdown" id="toc-benefits-of-markdown" class="nav-link" data-scroll-target="#benefits-of-markdown">Benefits of Markdown</a></li>
+  <li><a href="#quarto" id="toc-quarto" class="nav-link" data-scroll-target="#quarto">Quarto</a>
+  <ul class="collapse">
+  <li><a href="#multi-purpose-publishing" id="toc-multi-purpose-publishing" class="nav-link" data-scroll-target="#multi-purpose-publishing">Multi-purpose publishing</a></li>
+  <li><a href="#code-1" id="toc-code-1" class="nav-link" data-scroll-target="#code-1">Code</a></li>
+  <li><a href="#multi-format-publishing" id="toc-multi-format-publishing" class="nav-link" data-scroll-target="#multi-format-publishing">Multi-format publishing</a></li>
   </ul></li>
-  <li><a href="#resources" id="toc-resources" class="nav-link" data-scroll-target="#resources">Resources</a></li>
+  <li><a href="#demo" id="toc-demo" class="nav-link" data-scroll-target="#demo">Demo</a></li>
+  <li><a href="#authoring-a-quarto-document" id="toc-authoring-a-quarto-document" class="nav-link" data-scroll-target="#authoring-a-quarto-document">Authoring a Quarto document</a></li>
+  </ul></li>
   </ul>
 <div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="opensciws_slides.html"><i class="bi bi-file-slides"></i>RevealJS</a></li><li><a href="opensciws.pdf"><i class="bi bi-file-pdf"></i>PDF</a></li></ul></div></nav>
     </div>
@@ -1345,43 +1353,107 @@ code and data for and with papers, mostly Machine Learning
 </section>
 <section id="authoring" class="level1">
 <h1>Authoring</h1>
-<dl>
-<dt>Authoring</dt>
-<dd>
-<strong>How</strong> can we organise our project from the beginning so that we can publish outputs in the end?
-</dd>
-<dt>Publishing</dt>
-<dd>
-<strong>Where</strong> can I publish my work (platforms, research centers infrastructure, …)?
-</dd>
-</dl>
-<hr>
 <section id="plain-text" class="level2">
 <h2 class="anchored" data-anchor-id="plain-text">Plain text</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="att/tex-md-docs-learning-curve.png" class="img-fluid figure-img"></p>
+<figcaption class="figure-caption"><a href="https://www.reddit.com/r/LaTeX/comments/z2ifki/latex_vs_word_vs_pandoc_markdown/">source</a></figcaption>
+</figure>
+</div>
+<hr>
+</section>
+<section id="markdown-syntax" class="level2">
+<h2 class="anchored" data-anchor-id="markdown-syntax">Markdown syntax</h2>
+<p><img src="att/markdown-syntax.png" class="img-fluid"></p>
+<p><a href="https://quarto.org/docs/authoring/markdown-basics.html">Quarto: Markdown basics</a></p>
+<hr>
+</section>
+<section id="benefits-of-markdown" class="level2">
+<h2 class="anchored" data-anchor-id="benefits-of-markdown">Benefits of Markdown</h2>
+<ul>
+<li>Markdown provides <strong>semantic meaning</strong> for content in a relatively simple way</li>
+<li>You can write rich formatted content extremely <strong>quickly</strong> (compared to writing directly in HTML tags)</li>
+<li>You can <strong>read</strong> Markdown easily in plain text before rendered by HTML</li>
+<li>It doesn’t interrupt your <strong>workflow</strong> with the need to click buttons</li>
+<li>It’s <strong>platform-agnostic</strong> so your content is not tied to the format of your editor</li>
+</ul>
 <hr>
 </section>
 <section id="quarto" class="level2">
 <h2 class="anchored" data-anchor-id="quarto">Quarto</h2>
-<ul>
-<li>single source → multiple output formats
-<ul>
-<li>PDF for publication outlets</li>
-<li>blog</li>
-<li>website</li>
-</ul></li>
-</ul>
+<p><a href="https://quarto.org/" class="uri">https://quarto.org/</a></p>
+<p><img src="att/welcome-to-quarto.png" class="img-fluid"></p>
+<hr>
+<section id="multi-purpose-publishing" class="level3">
+<h3 class="anchored" data-anchor-id="multi-purpose-publishing">Multi-purpose publishing</h3>
+<p><img src="att/quarto-benefits.png" class="img-fluid"></p>
+<hr>
+</section>
+<section id="code-1" class="level3">
+<h3 class="anchored" data-anchor-id="code-1">Code</h3>
+<section id="python" class="level4">
+<h4 class="anchored" data-anchor-id="python">Python</h4>
+<p><img src="att/quarto-python.png" class="img-fluid"></p>
+<hr>
+</section>
+<section id="r" class="level4">
+<h4 class="anchored" data-anchor-id="r">R</h4>
+<p><img src="att/quarto-r.png" class="img-fluid"></p>
 <hr>
 </section>
 </section>
-<section id="resources" class="level1">
-<h1>Resources</h1>
+<section id="multi-format-publishing" class="level3">
+<h3 class="anchored" data-anchor-id="multi-format-publishing">Multi-format publishing</h3>
+<p>see the <a href="https://quarto.org/docs/gallery/">Quarto gallery</a></p>
+<hr>
+<section id="articles" class="level4">
+<h4 class="anchored" data-anchor-id="articles">Articles</h4>
+<p><img src="att/quarto-article.png" class="img-fluid"></p>
+<hr>
+</section>
+<section id="presentations" class="level4">
+<h4 class="anchored" data-anchor-id="presentations">Presentations</h4>
+<p><img src="att/quarto-presentations.png" class="img-fluid"></p>
+<hr>
+</section>
+<section id="websites" class="level4">
+<h4 class="anchored" data-anchor-id="websites">Websites</h4>
+<p><img src="att/quarto-websites.png" class="img-fluid"></p>
+<hr>
+</section>
+<section id="personal-websites-and-blogs" class="level4">
+<h4 class="anchored" data-anchor-id="personal-websites-and-blogs">Personal websites and blogs</h4>
+<p><img src="att/quarto-personal-websites.png" class="img-fluid"></p>
+<hr>
+</section>
+</section>
+</section>
+<section id="demo" class="level2">
+<h2 class="anchored" data-anchor-id="demo">Demo</h2>
+<p>Demo repository: <a href="https://github.com/wuqui/opensciwsdemo" class="uri">https://github.com/wuqui/opensciwsdemo</a></p>
+<p><img src="att/demo-quarto-website.png" class="img-fluid"></p>
+<hr>
+</section>
+<section id="authoring-a-quarto-document" class="level2">
+<h2 class="anchored" data-anchor-id="authoring-a-quarto-document">Authoring a Quarto document</h2>
+<div class="smallest">
+<p>You have until 16:00 h to,</p>
+<p>based on Quarto’s excellent <a href="https://quarto.org/docs/get-started%3E">getting started guide</a>,</p>
 <ul>
-<li>DRA</li>
-<li>The Turing Way</li>
-<li>Data Carpentries</li>
+<li>install Quarto</li>
+<li>make an example text document using Quarto Markdown syntax (optional: clone <a href="https://github.com/wuqui/opensciwsdemo">my demo repo</a>)</li>
+<li><code>render</code> the document to multiple output formats (<code>pdf</code>, <code>html</code>, <code>docx</code>, etc.)</li>
 </ul>
+<p>further steps</p>
+<ul>
+<li>publishing your document(s) as a website on GitHub pages (see <a href="https://quarto.org/docs/publishing/github-pages.html">tutorial</a>)</li>
+<li>refactoring existing document (e.g.&nbsp;paper, website) to Quarto Markdown</li>
+</ul>
+</div>
 
 
+</section>
 </section>
 
 

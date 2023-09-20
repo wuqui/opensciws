@@ -263,14 +263,42 @@
     "href": "opensciws_website.html#plain-text",
     "title": "Open Science and\nResearch Software Engineering",
     "section": "Plain text",
-    "text": "Plain text"
+    "text": "Plain text\n\n\n\nsource"
+  },
+  {
+    "objectID": "opensciws_website.html#markdown-syntax",
+    "href": "opensciws_website.html#markdown-syntax",
+    "title": "Open Science and\nResearch Software Engineering",
+    "section": "Markdown syntax",
+    "text": "Markdown syntax\n\nQuarto: Markdown basics"
+  },
+  {
+    "objectID": "opensciws_website.html#benefits-of-markdown",
+    "href": "opensciws_website.html#benefits-of-markdown",
+    "title": "Open Science and\nResearch Software Engineering",
+    "section": "Benefits of Markdown",
+    "text": "Benefits of Markdown\n\nMarkdown provides semantic meaning for content in a relatively simple way\nYou can write rich formatted content extremely quickly (compared to writing directly in HTML tags)\nYou can read Markdown easily in plain text before rendered by HTML\nIt doesn’t interrupt your workflow with the need to click buttons\nIt’s platform-agnostic so your content is not tied to the format of your editor"
   },
   {
     "objectID": "opensciws_website.html#quarto",
     "href": "opensciws_website.html#quarto",
     "title": "Open Science and\nResearch Software Engineering",
     "section": "Quarto",
-    "text": "Quarto\n\nsingle source → multiple output formats\n\nPDF for publication outlets\nblog\nwebsite"
+    "text": "Quarto\nhttps://quarto.org/\n\n\n\nMulti-purpose publishing\n\n\n\n\nCode\n\nPython\n\n\n\n\nR\n\n\n\n\n\nMulti-format publishing\nsee the Quarto gallery\n\n\nArticles\n\n\n\n\nPresentations\n\n\n\n\nWebsites\n\n\n\n\nPersonal websites and blogs"
+  },
+  {
+    "objectID": "opensciws_website.html#demo",
+    "href": "opensciws_website.html#demo",
+    "title": "Open Science and\nResearch Software Engineering",
+    "section": "Demo",
+    "text": "Demo\nDemo repository: https://github.com/wuqui/opensciwsdemo"
+  },
+  {
+    "objectID": "opensciws_website.html#authoring-a-quarto-document",
+    "href": "opensciws_website.html#authoring-a-quarto-document",
+    "title": "Open Science and\nResearch Software Engineering",
+    "section": "Authoring a Quarto document",
+    "text": "Authoring a Quarto document\n\nYou have until 16:00 h to,\nbased on Quarto’s excellent getting started guide,\n\ninstall Quarto\nmake an example text document using Quarto Markdown syntax (optional: clone my demo repo)\nrender the document to multiple output formats (pdf, html, docx, etc.)\n\nfurther steps\n\npublishing your document(s) as a website on GitHub pages (see tutorial)\nrefactoring existing document (e.g. paper, website) to Quarto Markdown"
   },
   {
     "objectID": "opensciws_website.html#footnotes",

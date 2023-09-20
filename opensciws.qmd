@@ -927,29 +927,111 @@ Papers with Code
 
 # Authoring
 
-Authoring
-: **How** can we organise our project from the beginning so that we can publish outputs in the end?
+## Plain text
 
-Publishing
-: **Where** can I publish my work (platforms, research centers infrastructure, ...)? 
+![[source](https://www.reddit.com/r/LaTeX/comments/z2ifki/latex_vs_word_vs_pandoc_markdown/)](att/tex-md-docs-learning-curve.png)
 
 ---
 
-## Plain text
+## Markdown syntax
+
+![](att/markdown-syntax.png)
+
+[Quarto: Markdown basics](https://quarto.org/docs/authoring/markdown-basics.html)
+
+---
+
+## Benefits of Markdown
+
+- Markdown provides **semantic meaning** for content in a relatively simple way
+- You can write rich formatted content extremely **quickly** (compared to writing directly in HTML tags)
+- You can **read** Markdown easily in plain text before rendered by HTML
+- It doesn’t interrupt your **workflow** with the need to click buttons
+- It’s **platform-agnostic** so your content is not tied to the format of your editor
 
 ---
 
 ## Quarto
 
-- single source → multiple output formats
-    - PDF for publication outlets
-    - blog
-    - website
-    
+<https://quarto.org/>
+
+![](att/welcome-to-quarto.png)
+
 ---
 
-# Resources
+### Multi-purpose publishing
 
-- DRA
-- The Turing Way
-- Data Carpentries
+![](att/quarto-benefits.png)
+
+---
+
+### Code
+
+#### Python
+
+![](att/quarto-python.png)
+
+---
+
+#### R
+
+![](att/quarto-r.png)
+
+---
+
+### Multi-format publishing
+
+see the [Quarto gallery](https://quarto.org/docs/gallery/)
+
+---
+
+#### Articles
+
+![](att/quarto-article.png)
+
+----
+
+#### Presentations
+
+![](att/quarto-presentations.png)
+
+---
+
+#### Websites
+
+![](att/quarto-websites.png)
+
+---
+
+#### Personal websites and blogs
+
+![](att/quarto-personal-websites.png)
+
+---
+
+## Demo
+
+Demo repository: <https://github.com/wuqui/opensciwsdemo>
+
+![](att/demo-quarto-website.png)
+
+---
+
+## Authoring a Quarto document
+
+::: {.smallest}
+
+You have until 16:00 h to,
+
+based on Quarto’s excellent [getting started guide](https://quarto.org/docs/get-started>),
+
+- install Quarto
+- make an example text document using Quarto Markdown syntax (optional: clone [my demo repo](https://github.com/wuqui/opensciwsdemo))
+- `render` the document to multiple output formats (`pdf`, `html`, `docx`, etc.)
+
+further steps
+
+- publishing your document(s) as a website on GitHub pages (see [tutorial](https://quarto.org/docs/publishing/github-pages.html))
+- refactoring existing document (e.g. paper, website) to Quarto Markdown
+
+:::
