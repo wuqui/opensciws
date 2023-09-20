@@ -1,0 +1,610 @@
+---
+title: |
+    | Open Science and
+    | Research Software Engineering
+subtitle: |
+    | Workshop
+    | Center for Advanced Internet Studies (CAIS)
+author:
+  - name: Quirin Würschinger
+    affiliation: LMU Munich
+    email: q.wuerschinger@lmu.de
+date: 2023-09-21
+date-format: long
+format:
+  revealjs:
+    output-file: opensciws_slides.html
+    slide-level: 0
+    css: custom.css
+    embed-resources: true
+    slide-number: true
+  html:
+    output-file: opensciws_website.html
+    toc: true
+---
+
+# What this workshop will be about
+
+---
+
+## > `whoami`
+
+::::: {.tiny}
+
+:::: {.columns}
+::: {.column width="80%"}
+Quirin Würschinger  
+[q.wuerschinger@lmu.de](mailto:q.wuerschinger@lmu.de)  
+Wissenschaftlicher Mitarbeiter and PostDoc in (computational) linguistics  
+LMU Munich
+:::
+::: {.column width="20%"}
+![](att/qw.png){height=150 fig-align="right"}
+:::
+::::
+
+:::: {.columns}
+::: {.column width="50%"}
+**Current work**
+
+- **research** 
+    - lexical innovation on the web and in social networks 
+    - variation and change in language use and social polarization in social networks
+    - using Large Language Models (LLMs) like ChatGPT for research in linguistics and social science.
+- **teaching**: corpus linguistics and research methodology
+:::
+::: {.column width="50%"}
+**Promoting Open Science in (computational) linguistics at LMU**
+
+- teaching and applying reproducible corpuslinguistic methods
+- creating and sharing corpora among researchers and students
+:::
+::::
+:::::
+
+---
+
+## Topics
+
+::: {.smallest}
+- **Open Science**: What is it and why does it make sense?
+- **Project setup**: Learn to efficiently organize your project's files and folders.
+- **Data, code, and document management**: Understand how to effectively manage and maintain your data, code, and documents.
+- **Utilizing different data types**: Discover how to work with various data types, such as interviews, web, and social media data.
+- **Publication process**: Learn about options for publishing your data, code, and documents.
+:::
+
+---
+
+## Time table
+
+::: {.tiny} 
+| Topic                   | Start | End   |
+|-------------------------|-------|-------|
+| Intro                   | 09:00 | 09:30 |
+| Open Science principles | 09:30 | 10:30 |
+| ---                     | 10:30 | 10:50 |
+| version control         | 10:50 | 11:10 |
+| project structure       | 11:10 | 12:00 |
+| data                    | 12:00 | 12:30 |
+| ---                     | 12:30 | 13:30 |
+| code                    | 13:30 | 14:00 |
+| methods                 | 14:00 | 14:30 |
+| authoring               | 14:30 | 15:15 |
+| ---                     | 15:15 | 15:30 |
+| publishing              | 15:30 | 16:00 |
+| open issues and recap   | 16:00 | 16:30 |
+:::
+
+---
+
+## Addressing different backgrounds and goals
+
+---
+
+### Backgrounds and interests 
+
+CAIS: Forschung zu Digitalisierung und Digitale Gesellschaft
+
+:::: {.columns}
+::: {.column width="50%" .r-fit-text}
+Fachrichtungen 
+
+- Politikwissenschaft
+- Erziehungswissenschaft
+- Kommunikationswissenschaft
+- Soziologie
+- …
+:::
+::: {.column width="50%" .r-fit-text}
+Daten und Methoden
+
+- qualitativen Interviews
+- Textanalysen
+- quantitativen Befragungen
+- experimentellen Designs
+- Online-Plattformen/Social Media
+- …
+:::
+::::
+
+---
+
+### Main interests
+
+::: {.smallest}
+- reproducible workflows
+    - managing files and folders
+    - plain text authoring
+    - programming with Python and R
+- methods
+    - quantitative approaches
+    - text analysis
+    - questionnaires
+- publishing
+    - papers
+    - code and data
+:::
+
+---
+
+### Who are you?
+
+::::: {.smaller}
+:::: {.columns}
+::: {.column width="60%"}
+1. name
+1. place and position
+1. your research interest in about 3 sentences for someone outside your field
+:::
+::: {.column width="40%"}
+![[Dance your PhD](https://www.science.org/do/10.1126/science.adh5473/abs/_20230313_on_dance_your_phd_4.jpg)](att/dance-your-phd.png)
+:::
+::::
+:::::
+
+---
+
+# Open Science principles
+
+---
+
+## What is Open Science
+
+![](att/what-is-open-science.png)
+
+---
+
+## Why should we do Open Science?
+
+![](att/most-science-is-wrong.png)
+
+---
+
+![[Richard McElreath: *Science as Amateur Software Development*](https://www.youtube.com/watch?v=zwRdO9_GGhY)](att/scientists-mostly-hackers.png)
+
+---
+
+![[source](https://projects.fivethirtyeight.com/p-hacking/)](att/p-hacking.png)
+
+---
+
+![[source](https://ascl.net/wordpress/wp-content/uploads/2014/01/reproducibility-graphic-online4-e1465141765559.jpg)](att/factors-irreproducible-research.png)
+
+---
+
+![[source](https://www.theverge.com/2020/8/6/21355674/human-genes-rename-microsoft-excel-misreading-dates)](att/excel-renaming.png)
+
+---
+
+![[source](https://www.youtube.com/watch?v=zwRdO9_GGhY)](att/skills-to-pay-the-bills.png)
+
+---
+
+
+## Principles of Open Science
+
+![[Center for Open Science](https://www.cos.io/open-science)](att/open-science-principles.png)
+
+---
+
+## Open Science lifecycle
+
+![[Center for Open Science](https://www.cos.io/open-science)](att/open-science-lifecycle.png)
+
+---
+
+## Roles in Open Science
+
+::: {.smallest}
+Funders 
+: make open science part of the selection process, and conditions for grantees conducting research.
+
+Publishers 
+: make open science part of the review process, and conditions for articles published in their journals.
+
+Institutions 
+: make open science part of academic training, and part of the selection process for research positions and evaluation for advancement and promotion.
+
+Societies 
+: make open science part of their awards, events, and scholarly norms.
+
+Researchers 
+: enact open science in their work and advocate for broader adoption in their communities.
+
+[[Center for Open Science](https://www.cos.io/open-science)]
+:::
+
+---
+
+## Who profits from Open Science?
+
+![[source](https://docs.google.com/presentation/d/1Ae85nKcTAkr-omlTZopN04yV-lPBZJjX9kPMVUlBRVo/edit#slide=id.gfe5b481e28_0_22)](att/public-money.png)
+
+---
+
+## What is Open Science to you?
+
+What do you find interesting, important, or attractive about Open Science?
+
+<https://tinyurl.com/opnsci>
+
+---
+
+## Learning outcomes
+
+![](att/learning-outcomes.png)
+      
+---
+
+# Implementing an open and reproducible workflow
+
+1. version control
+1. project structure
+1. data
+1. methods
+1. code
+1. authoring
+1. publishing
+
+---
+
+# Break
+
+---
+
+
+# Taking notes
+
+Networked notes
+
+- logseq
+- Obsidian
+
+---
+
+# Version control
+
+---
+
+## Why use version control?
+
+:::: {.columns}
+::: {.column width=40%}
+![](att/paper-file-names.png)
+:::
+::: {.column width=60%}
+![](att/revision-email.png)
+:::
+::::
+
+::: {.smallest}
+[source](https://docs.google.com/presentation/d/1Ae85nKcTAkr-omlTZopN04yV-lPBZJjX9kPMVUlBRVo/edit#slide=id.g23ae9873052_7_56)
+:::
+
+---
+
+## git and GitHub/GitLab
+
+:::: {.columns .r-fit-text}
+::: {.column width="50%"}
+git
+: software on your machine
+
+![](att/logo-git.png){height=250}
+
+```sh
+git add scr/tests.py
+git commit -m 'add tests'
+git push
+```
+
+:::
+::: {.column width="50%"}
+
+GitHub and GitLab
+: services on a remote server
+
+:::: {.columns}
+::: {.column width="50%"}
+![](att/logo-github.png){height=250}
+:::
+::: {.column width="50%"}
+![](att/logo-gitlab.png){height=250}
+:::
+::::
+:::
+::::
+
+---
+
+## git commands
+
+![[(source)](https://docs.google.com/presentation/d/1Ae85nKcTAkr-omlTZopN04yV-lPBZJjX9kPMVUlBRVo/edit#slide=id.g23ae9873052_7_266)](att/git-commands.png)
+
+---
+
+## Collaborating using GitHub
+
+![[(source)](https://cdn.duzun.me/images/tips/git_remotes.png)](att/github-collaboration.png)
+
+---
+
+## GitHub workflow
+
+![[(source)](https://dev.to/mollynem/git-github--workflow-fundamentals-5496)](att/github-workflow.png)
+
+
+---
+
+## How to set up a GitHub repository
+
+---
+
+### create a repository on GitHub
+
+:::: {.columns .smallest}
+::: {.column width="50%"}
+1. (create [GitHub](https://github.com/) account)
+2. click on `New` (<https://github.com/new>)
+3. specify repo name ^[safe: lowercase alphabet characters]
+4. specify description
+5. specify visibility: private or public
+6. select `Add a README file`
+6. specify licence ^[good choice for many purposes: MIT license]
+:::
+::: {.column width="50%"}
+<!-- ![](att/git-create-repo.png) -->
+![](att/git-create-repo-long.png)
+:::
+::::
+
+---
+
+### `clone` the repository
+
+go to the folder where you want your project to live
+
+![](att/git-clone.png)
+
+```sh
+git clone https://github.com/wuqui/opensciws.git
+```
+
+---
+
+### `add` changes
+
+---
+
+### `commit` changes
+
+---
+
+### `push` changes
+
+---
+
+# Project structure
+
+:::: {.columns}
+::: {.column width="50%"}
+![](att/genius-einstein.png)
+:::
+::: {.column width="50%"}
+![[source](https://docs.google.com/presentation/d/1Ae85nKcTAkr-omlTZopN04yV-lPBZJjX9kPMVUlBRVo/edit#slide=id.g230f92d131c_0_86)](att/genius-trump.gif)
+Let’s not pretend we’re all geniuses …
+:::
+::::
+
+---
+
+## File names
+
+![](att/file-names.png)
+
+::: {.smallest}
+File names should be:
+
+- Machine readable
+- Human readable
+- Optional: Consistent
+- Optional: Play well with default ordering
+:::
+
+---
+
+## File structure
+
+
+```
+.
+├── analysis            <- all things data analysis
+│   └── src             <- functions and other source files
+├── comm
+│   ├── internal-comm   <- internal communication such as meeting notes
+│   └── journal-comm    <- communication with the journal, e.g. peer review
+├── data
+│   ├── data_clean      <- clean version of the data
+│   └── data_raw        <- raw data (don't touch)
+├── dissemination
+│   ├── manuscripts
+│   ├── posters
+│   └── presentations
+├── documentation       <- documentation, e.g. data management plan
+└── misc                <- miscellaneous files that don't fit elsewhere
+
+```
+
+ 
+
+```sh
+tree DIR
+```
+cookie cutters
+
+---
+
+## Practice: managing files and folders
+
+---
+
+# Data
+
+---
+
+## FAIR data
+
+![[source](https://libereurope.eu/article/fairdataconsultation/)](att/fair-data.png)
+
+---
+
+## Types of data
+
+- interviews
+- questionnaires
+- web
+- social media
+
+---
+
+# Code
+
+---
+
+## Reproducibility et al.
+
+![[The Turing Way](https://the-turing-way.netlify.app/reproducible-research/overview/overview-definitions.html)](att/reproducibility-matrix.png)
+
+---
+
+![](att/reproducibility-ruler.png)
+
+---
+
+![[source](https://www.youtube.com/watch?v=zwRdO9_GGhY)](att/reproducibility-numbers.png)
+
+---
+
+## notebooks and literate programming
+
+- Knuth
+    - application
+        - R
+        - Python: nbdev
+        
+---
+
+## Licensing
+
+:::: {.columns}
+::: {.column}
+Code
+
+![<https://choosealicense.com>](att/choose-a-license.png)
+
+:::
+::: {.column}
+Other materials
+
+![<https://creativecommons.org/choose/>](att/license-features.png)
+
+:::
+::::
+
+---
+
+# Authoring
+
+Authoring
+: **How** can we organise our project from the beginning so that we can publish outputs in the end?
+
+Publishing
+: **Where** can I publish my work (platforms, research centers infrastructure, ...)? 
+
+---
+
+## Plain text
+
+---
+
+## Quarto
+
+- single source → multiple output formats
+    - PDF for publication outlets
+    - blog
+    - website
+    
+---
+
+# Publishing
+
+How: How can we organise our project from the beginning so that we can publish outputs in the end?
+Where: Where can I publish my work (platforms, research centers infrastructure, ...)? 
+
+---
+
+## Pre-registration
+
+![[source](https://www.cos.io/initiatives/registered-reports)](att/pre-registration.png)
+
+---
+
+![[source](https://www.cos.io/initiatives/registered-reports)](att/pre-registration-cycle.png)
+
+---
+
+## Outlets
+
+::: {.smallest}
+
+ArXiV
+: preprints
+
+Zenodo
+: all kinds including data, code, preprints, etc.
+
+GitHub and GitLab
+: code, software
+
+Open Science Framework
+: all kinds including data, code, preprints, preregistration, etc.
+
+Software Heritage
+: archival of code (long-term)
+
+Papers with Code
+: code and data for and with papers, mostly Machine Learning
+
+…
+: 
+
+:::
+
+---
+
+# Resources
+
+- DRA
+- The Turing Way
+- Data Carpentries
