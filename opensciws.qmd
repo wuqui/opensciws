@@ -255,7 +255,7 @@ Societies
 Researchers 
 : enact open science in their work and advocate for broader adoption in their communities.
 
-[[Center for Open Science](https://www.cos.io/open-science)]
+([Center for Open Science](https://www.cos.io/open-science))
 :::
 
 ---
@@ -1056,3 +1056,10 @@ further steps
 ---
 
 # Recap, open issues, feedback
+
+1. version control
+1. project structure
+1. code
+1. data and methods
+1. authoring
+1. publishing
