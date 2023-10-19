@@ -205,10 +205,6 @@ Please briefly introduce yourself …
 
 ---
 
-![[Richard McElreath: *Science as Amateur Software Development*](https://www.youtube.com/watch?v=zwRdO9_GGhY)](att/scientists-mostly-hackers.png)
-
----
-
 What are the reasons why science can go wrong?
 
 ---
@@ -221,6 +217,11 @@ What are the reasons why science can go wrong?
 
 ---
 
+
+![[Richard McElreath: *Science as Amateur Software Development*](https://www.youtube.com/watch?v=zwRdO9_GGhY)](att/scientists-mostly-hackers.png)
+
+---
+
 ![[source](https://www.youtube.com/watch?v=zwRdO9_GGhY)](att/skills-to-pay-the-bills.png)
 
 ---
@@ -228,6 +229,10 @@ What are the reasons why science can go wrong?
 ## Principles of Open Science
 
 ![[Center for Open Science](https://www.cos.io/open-science)](att/open-science-principles.png)
+
+::: {.notes}
+09:20
+:::
 
 ---
 
@@ -271,6 +276,10 @@ Researchers
 What do you find interesting, important, or attractive about Open Science?
 
 <https://tinyurl.com/opnsci>
+
+::: {.notes}
+09:50
+:::
 
 ---
 
@@ -557,6 +566,10 @@ Optionally: set up version control via git/GitHub for this project.
 
 ![](att/reproducibility-ruler.png)
 
+::: {.notes}
+interesting for student projects
+:::
+
 ---
 
 ### The quality of tools
@@ -574,9 +587,17 @@ Optionally: set up version control via git/GitHub for this project.
 
 ---
 
+::: {.note}
+not all our projects have that high stakes
+:::
+
 ### Professional testing
 
 ![[source](https://www.youtube.com/watch?v=8qzVV7eEiaI&t=396s)](att/testing-stan-lib.png)
+
+::: {.note}
+same is true of industry
+:::
 
 ---
 
@@ -636,6 +657,13 @@ using `pytest` for Python
 ::::
 :::::
 
+::: {.notes}
+psychological benefit: conversation
+- helps reasoning
+- more fun (human)
+- → ChatBots
+:::
+
 ---
 
 ### Notebooks
@@ -657,6 +685,11 @@ R
 → both work with [Quarto](https://quarto.org/)
 :::::
 
+::: {.notes}
+- who uses notebooks?
+- which ones?
+- good for novices & experts
+:::
 
 ---
 
@@ -674,21 +707,35 @@ Programming a deck of cards: <https://github.com/fastai/nbdev_cards/>
 
 ![](att/nbdev-cars-2.png)
 
+::: {.notes}
+compare with `pytest`: much easier/natural
+:::
+
 ---
 
 ### Additional benefits of `nbdev`
 
-- publishing documentation via Quarto
 - simple, integrated testing
 - [continuous integration](https://the-turing-way.netlify.app/reproducible-research/ci.html)
 - dependency management
 - publishing code for PyPI and conda
+- publishing documentation via Quarto
+
+::: {.notes}
+- good for novices & experts
+- covers about 80% of programming setup for free
+- more about Quarto later
+:::
 
 ---
 
 ### R: Quarto and RMarkdown
 
 ![](att/r-literate-programming-quarto.png)
+
+::: {.notes}
+benefit: visual editor
+:::
 
 ---
 
@@ -794,6 +841,14 @@ CAIS: Forschung zu Digitalisierung und Digitale Gesellschaft
     - appropriate file formats (e.g. `csv` > `xlsx`)
 :::
 
+::: {.notes}
+- Excel issues
+    - formatting
+    - thousands separators: `,` vs `.`
+    - date conversion
+    - formulas
+:::
+
 ---
 
 ## Sharing social media data
@@ -819,7 +874,8 @@ CAIS: Forschung zu Digitalisierung und Digitale Gesellschaft
 :::
 
 ::: {.notes}
-paper on incest
+- additional reason: sharing not **considered** (necessary) 
+- **ethical** and **privacy**: paper on incest on Twitter
 :::
 
 ---
@@ -840,15 +896,7 @@ paper on incest
 
 ## Data and methods
 
-In groups of shared interests and expertise, make a **digital poster** about challenges and possibilities of working with data in your field of study.
-
-For example, this could tackle issues like collecting, publishing, and sharing data.
-
-Try to make it as concrete and constructive as possible.
-
-You have until **14:20 h** to make the poster.
-
-After that, each group will briefly present their poster.
+get active: see <https://tinyurl.com/opnsci>
 
 ---
 
