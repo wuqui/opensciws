@@ -9,7 +9,7 @@ author:
   - name: Quirin Würschinger
     affiliation: LMU Munich
     email: q.wuerschinger@lmu.de
-date: 2023-09-21
+date: today
 date-format: long
 format:
   revealjs:
