@@ -4,3 +4,26 @@ project:
   render:
     - "*.qmd"
     - "!internal/"
+
+title: |
+    | Open Science and
+    | Research Software Engineering
+subtitle: |
+    | Workshop
+    | Center for Advanced Internet Studies (CAIS)
+author:
+  - name: Quirin Würschinger
+    affiliation: LMU Munich
+    email: q.wuerschinger@lmu.de
+date: today
+date-format: long
+format:
+  revealjs:
+    output-file: opensciws_slides.html
+    slide-level: 0
+    css: custom.css
+    embed-resources: true
+    slide-number: true
+  html:
+    output-file: opensciws_website.html
+    toc: true
