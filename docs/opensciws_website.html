@@ -850,6 +850,7 @@ services on a remote server
 <li>machine-readable</li>
 <li>human-readable</li>
 <li>consistent</li>
+<li>avoid non-ASCII characters (e.g.&nbsp;umlauts like ü, ä)</li>
 <li>optional: play well with default ordering (e.g.&nbsp;include timestamps)</li>
 </ul>
 </div>
@@ -873,6 +874,12 @@ services on a remote server
 ├── documentation       &lt;- documentation, e.g. data management plan
 └── misc                &lt;- miscellaneous files that don't fit elsewhere
 </code></pre>
+<dl>
+<dt>General principle</dt>
+<dd>
+keep the ‘inputs’ of your project/code (e.g.&nbsp;data) separate from its outputs (e.g.&nbsp;plots).
+</dd>
+</dl>
 <hr>
 </section>
 <section id="practice-project-management" class="level2">

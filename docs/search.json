@@ -144,14 +144,14 @@
     "href": "opensciws_website.html#file-names",
     "title": "Open Science and\nResearch Software Engineering",
     "section": "File names",
-    "text": "File names\n\n\nFile names should be:\n\nmachine-readable\nhuman-readable\nconsistent\noptional: play well with default ordering (e.g. include timestamps)"
+    "text": "File names\n\n\nFile names should be:\n\nmachine-readable\nhuman-readable\nconsistent\navoid non-ASCII characters (e.g. umlauts like ü, ä)\noptional: play well with default ordering (e.g. include timestamps)"
   },
   {
     "objectID": "opensciws_website.html#file-structure",
     "href": "opensciws_website.html#file-structure",
     "title": "Open Science and\nResearch Software Engineering",
     "section": "File structure",
-    "text": "File structure\n.\n├── analysis            &lt;- all things data analysis\n│   └── src             &lt;- functions and other source files\n├── comm\n│   ├── internal-comm   &lt;- internal communication such as meeting notes\n│   └── journal-comm    &lt;- communication with the journal, e.g. peer review\n├── data\n│   ├── data_clean      &lt;- clean version of the data\n│   └── data_raw        &lt;- raw data (don't touch)\n├── dissemination\n│   ├── manuscripts\n│   ├── posters\n│   └── presentations\n├── documentation       &lt;- documentation, e.g. data management plan\n└── misc                &lt;- miscellaneous files that don't fit elsewhere"
+    "text": "File structure\n.\n├── analysis            &lt;- all things data analysis\n│   └── src             &lt;- functions and other source files\n├── comm\n│   ├── internal-comm   &lt;- internal communication such as meeting notes\n│   └── journal-comm    &lt;- communication with the journal, e.g. peer review\n├── data\n│   ├── data_clean      &lt;- clean version of the data\n│   └── data_raw        &lt;- raw data (don't touch)\n├── dissemination\n│   ├── manuscripts\n│   ├── posters\n│   └── presentations\n├── documentation       &lt;- documentation, e.g. data management plan\n└── misc                &lt;- miscellaneous files that don't fit elsewhere\n\n\nGeneral principle\n\nkeep the ‘inputs’ of your project/code (e.g. data) separate from its outputs (e.g. plots)."
   },
   {
     "objectID": "opensciws_website.html#practice-project-management",

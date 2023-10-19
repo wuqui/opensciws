@@ -1,28 +1,3 @@
----
-title: |
-    | Open Science and
-    | Research Software Engineering
-subtitle: |
-    | Workshop
-    | Center for Advanced Internet Studies (CAIS)
-author:
-  - name: Quirin Würschinger
-    affiliation: LMU Munich
-    email: q.wuerschinger@lmu.de
-date: today
-date-format: long
-format:
-  revealjs:
-    output-file: opensciws_slides.html
-    slide-level: 0
-    css: custom.css
-    embed-resources: true
-    slide-number: true
-  html:
-    output-file: opensciws_website.html
-    toc: true
----
-
 # Introduction
 
 ---
@@ -498,8 +473,11 @@ File names should be:
 - machine-readable
 - human-readable
 - consistent
+- avoid non-ASCII characters (e.g. umlauts like ü, ä)
 - optional: play well with default ordering (e.g. include timestamps)
+
 :::
+
 
 ---
 
@@ -524,6 +502,9 @@ File names should be:
 └── misc                <- miscellaneous files that don't fit elsewhere
 
 ```
+
+General principle
+: keep the ‘inputs’ of your project/code (e.g. data) separate from its outputs (e.g. plots).
 
 ---
 
