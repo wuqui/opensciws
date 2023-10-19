@@ -251,6 +251,8 @@ What do you find interesting, important, or attractive about Open Science?
 
 <https://tinyurl.com/opnsci>
 
+![](whiteboard/what-is-open-science-to-you.png)
+
 ::: {.notes}
 09:50
 :::
@@ -263,6 +265,7 @@ What do you find interesting, important, or attractive about Open Science?
       
 ---
 
+::: {.content-visible when-format="revealjs"}
 # Implementing an open and reproducible workflow
 
 1. version control
@@ -273,6 +276,7 @@ What do you find interesting, important, or attractive about Open Science?
 1. publishing
 
 ---
+:::
 
 ::: {.content-visible when-format="revealjs"}
 # Break
@@ -874,9 +878,11 @@ CAIS: Forschung zu Digitalisierung und Digitale Gesellschaft
 
 ---
 
-## Data and methods
+## Group work
 
 get active: see <https://tinyurl.com/opnsci>
+
+![](whiteboard/data-and-methods.png)
 
 ---
 

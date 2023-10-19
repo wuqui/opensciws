@@ -88,14 +88,14 @@
     "href": "opensciws_website.html#what-is-open-science-to-you",
     "title": "Open Science and\nResearch Software Engineering",
     "section": "What is Open Science to you?",
-    "text": "What is Open Science to you?\nWhat do you find interesting, important, or attractive about Open Science?\nhttps://tinyurl.com/opnsci\n\n09:50"
+    "text": "What is Open Science to you?\nWhat do you find interesting, important, or attractive about Open Science?\nhttps://tinyurl.com/opnsci\n\n\n09:50"
   },
   {
     "objectID": "opensciws_website.html#learning-outcomes",
     "href": "opensciws_website.html#learning-outcomes",
     "title": "Open Science and\nResearch Software Engineering",
     "section": "Learning outcomes",
-    "text": "Learning outcomes"
+    "text": "Learning outcomes\n\n\n::: {.content-visible when-format=“revealjs”} # Implementing an open and reproducible workflow\n\nversion control\nproject structure\ncode\ndata and methods\nauthoring\npublishing"
   },
   {
     "objectID": "opensciws_website.html#why-use-version-control",
@@ -231,11 +231,11 @@
     "text": "The case of Twitter\n\n\nstage 1: access costly & legal grey area for scraping\nstage 2: Research API 🎉\nstage 3: Elon Musik → X → …\n\n\n\n\n\n\nsource"
   },
   {
-    "objectID": "opensciws_website.html#data-and-methods-1",
-    "href": "opensciws_website.html#data-and-methods-1",
+    "objectID": "opensciws_website.html#group-work",
+    "href": "opensciws_website.html#group-work",
     "title": "Open Science and\nResearch Software Engineering",
-    "section": "Data and methods",
-    "text": "Data and methods\nget active: see https://tinyurl.com/opnsci"
+    "section": "Group work",
+    "text": "Group work\nget active: see https://tinyurl.com/opnsci"
   },
   {
     "objectID": "opensciws_website.html#open-access",
