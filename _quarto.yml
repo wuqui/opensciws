@@ -27,3 +27,5 @@ format:
     output-file: opensciws_website.html
     toc: true
     css: website.css
+revealjs-plugins:
+  - pointer
