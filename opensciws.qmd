@@ -21,7 +21,6 @@ format:
   html:
     output-file: opensciws_website.html
     toc: true
-  pdf: default
 ---
 
 # Introduction
