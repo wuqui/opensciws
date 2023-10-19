@@ -4,7 +4,6 @@ project:
   render:
     - "*.qmd"
     - "!internal/"
-
 title: |
     | Open Science and
     | Research Software Engineering
@@ -27,3 +26,4 @@ format:
   html:
     output-file: opensciws_website.html
     toc: true
+    css: website.css
